@@ -31,6 +31,7 @@ if ! [ -x "$(command -v salt-minion)" ]; then
 
     # create the salt config file on minion; we need to start/restart it after writing the config file
     sudo echo -e "master: 100.73.84.169" | sudo tee /etc/salt/minion.d/master.conf
+    sudo echo -e "ipv6: false" | sudo tee /etc/salt/minion.d/network.conf
     sudo systemctl enable salt-minion && sudo systemctl start salt-minion
 fi
 
