@@ -32,7 +32,11 @@ if ! [ -x "$(command -v salt-minion)" ]; then
     # create the salt config file on minion; we need to start/restart it after writing the config file
     sudo echo -e "master: 100.73.84.169" | sudo tee /etc/salt/minion.d/master.conf
     sudo echo -e "ipv6: false" | sudo tee /etc/salt/minion.d/network.conf
+    
     sudo systemctl enable salt-minion && sudo systemctl start salt-minion
+    # restart the service to get the config changes
+    echo "Restarting salt-minion.service..."
+    sudo systemctl restart salt-minion.service
 fi
 
 if ! systemctl is-active --quiet salt-minion; then
@@ -42,4 +46,3 @@ fi
 
 # bring up the instance to the VPN network
 sudo netbird up --setup-key "$2"
-
