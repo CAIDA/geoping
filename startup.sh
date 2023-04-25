@@ -22,6 +22,19 @@ else
     echo "netbird installed."
 fi
 
+if ! [ -x "$(command -v salt-minion)" ]; then
+    echo "Salt Minion is not installed. Installing now..."
+    sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+    echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
+fi
+
+if ! systemctl is-active --quiet salt-minion; then
+    echo "Salt Minion is not running. Starting now..."
+    sudo systemctl enable salt-minion && sudo systemctl start salt-minion
+fi
+
 # bring up the instance to the VPN network
 sudo netbird up --setup-key "$2"
 
+# create the salt config file on minion; we are overwriting each time
+sudo echo -e "master: 100.73.84.169" | sudo tee /etc/salt/minion.d/master.conf
