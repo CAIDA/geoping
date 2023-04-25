@@ -28,6 +28,9 @@ if ! [ -x "$(command -v salt-minion)" ]; then
     echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
     sudo apt-get update
     sudo apt-get install -y salt-minion
+
+    # create the salt config file on minion; we need to start/restart it after writing the config file
+    sudo echo -e "master: 100.73.84.169" | sudo tee /etc/salt/minion.d/master.conf
     sudo systemctl enable salt-minion && sudo systemctl start salt-minion
 fi
 
@@ -39,5 +42,3 @@ fi
 # bring up the instance to the VPN network
 sudo netbird up --setup-key "$2"
 
-# create the salt config file on minion; we are overwriting each time
-sudo echo -e "master: 100.73.84.169" | sudo tee /etc/salt/minion.d/master.conf
