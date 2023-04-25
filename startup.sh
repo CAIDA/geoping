@@ -26,6 +26,9 @@ if ! [ -x "$(command -v salt-minion)" ]; then
     echo "Salt Minion is not installed. Installing now..."
     sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
     echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
+    sudo apt-get update
+    sudo apt-get install salt-minion
+    sudo systemctl enable salt-minion && sudo systemctl start salt-minion
 fi
 
 if ! systemctl is-active --quiet salt-minion; then
