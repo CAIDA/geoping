@@ -14,11 +14,11 @@ if dpkg -s netbird >/dev/null 2>&1; then
 else
     # install netbird
     sudo apt-get update
-    sudo apt-get install ca-certificates curl gnupg -y
+    sudo apt-get install -y ca-certificates curl gnupg -y
     curl -sSL https://pkgs.wiretrustee.com/debian/public.key | sudo gpg --dearmor --output /usr/share/keyrings/wiretrustee-archive-keyring.gpg
     echo 'deb [signed-by=/usr/share/keyrings/wiretrustee-archive-keyring.gpg] https://pkgs.wiretrustee.com/debian stable main' | sudo tee /etc/apt/sources.list.d/wiretrustee.list
     sudo apt-get update
-    sudo apt-get install netbird
+    sudo apt-get install -y netbird
     echo "netbird installed."
 fi
 
@@ -27,7 +27,7 @@ if ! [ -x "$(command -v salt-minion)" ]; then
     sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
     echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
     sudo apt-get update
-    sudo apt-get install salt-minion
+    sudo apt-get install -y salt-minion
     sudo systemctl enable salt-minion && sudo systemctl start salt-minion
 fi
 
