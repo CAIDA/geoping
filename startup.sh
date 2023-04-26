@@ -44,5 +44,13 @@ if ! systemctl is-active --quiet salt-minion; then
     sudo systemctl enable salt-minion && sudo systemctl start salt-minion
 fi
 
+# Check if scamper command is available
+if ! command -v scamper &> /dev/null; then
+    echo "Scamper is not installed. Installing scamper..."
+    sudo add-apt-repository ppa:matthewluckie/scamper -y
+    sudo apt update
+    sudo apt install -y scamper
+fi
+
 # bring up the instance to the VPN network
 sudo netbird up --setup-key "$2"
