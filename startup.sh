@@ -53,11 +53,9 @@ if ! command -v scamper &> /dev/null; then
 fi
 
 # Check if bzip2 is installed
-if ! command -v bzip2 &> /dev/null then
+if ! command -v bzip2 &> /dev/null; then
     echo "bzip2 is not installed. Installing now..."
     sudo apt-get install -y bzip2
-else
-    echo "bzip2 is already installed."
 fi
 
 # bring up the instance to the VPN network
