@@ -63,11 +63,10 @@ sudo netbird up --setup-key "$2"
 
 # Uninstall old scamper and install new one
 sudo apt purge -y scamper
-sudo apt install -y build-essential
-wget https://www.caida.org/~mjl/tmp/scamper-cvs-20230428.tar.gz
-tar -xzf scamper-cvs-20230428.tar.gz
-cd scamper-cvs-20230428/
-CFLAGS='-g' ./configure --prefix=/home/ubuntu/scamper
-make
-make install
+sudo apt install -y build-essential 
+wget -P /home/ubuntu https://www.caida.org/~mjl/tmp/scamper-cvs-20230428.tar.gz
+tar -xzf /home/ubuntu/scamper-cvs-20230428.tar.gz -C /home/ubuntu
+cd /home/ubuntu/scamper-cvs-20230428/ && CFLAGS='-g' ./configure --prefix=/home/ubuntu/scamper && make && make install
+echo "Setting Path"
 export PATH="/home/ubuntu/scamper/bin/:$PATH"
+echo "Done setting path"
