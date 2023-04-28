@@ -52,5 +52,24 @@ if ! command -v scamper &> /dev/null; then
     sudo apt install -y scamper
 fi
 
+# Check if bzip2 is installed
+if ! command -v bzip2 &> /dev/null then
+    echo "bzip2 is not installed. Installing now..."
+    sudo apt-get install -y bzip2
+else
+    echo "bzip2 is already installed."
+fi
+
 # bring up the instance to the VPN network
 sudo netbird up --setup-key "$2"
+
+# Uninstall old scamper and install new one
+sudo apt purge -y scamper
+sudo apt install -y build-essential
+wget https://www.caida.org/~mjl/tmp/scamper-cvs-20230428.tar.gz
+tar -xzf scamper-cvs-20230428.tar.gz
+cd scamper-cvs-20230428/
+CFLAGS='-g' ./configure --prefix=/home/ubuntu/scamper
+make
+make install
+export PATH="/home/ubuntu/scamper/bin/:$PATH"
