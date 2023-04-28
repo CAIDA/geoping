@@ -45,11 +45,12 @@ if ! systemctl is-active --quiet salt-minion; then
 fi
 
 # Check if scamper command is available
-if ! command -v scamper &> /dev/null; then
+if ! command -v /home/ubuntu/scamper/bin/scamper &> /dev/null; then
     echo "Scamper is not installed. Installing scamper..."
-    sudo add-apt-repository ppa:matthewluckie/scamper -y
-    sudo apt update
-    sudo apt install -y scamper
+    sudo apt install -y build-essential 
+    wget -P /home/ubuntu https://www.caida.org/~mjl/tmp/scamper-cvs-20230428.tar.gz
+    tar -xzf /home/ubuntu/scamper-cvs-20230428.tar.gz -C /home/ubuntu
+    cd /home/ubuntu/scamper-cvs-20230428/ && CFLAGS='-g' ./configure --prefix=/home/ubuntu/scamper && make && make install
 fi
 
 # Check if bzip2 is installed
@@ -60,17 +61,3 @@ fi
 
 # bring up the instance to the VPN network
 sudo netbird up --setup-key "$2"
-
-# Uninstall old scamper and install new one
-sudo apt purge -y scamper
-sudo apt install -y build-essential 
-wget -P /home/ubuntu https://www.caida.org/~mjl/tmp/scamper-cvs-20230428.tar.gz
-tar -xzf /home/ubuntu/scamper-cvs-20230428.tar.gz -C /home/ubuntu
-cd /home/ubuntu/scamper-cvs-20230428/ && CFLAGS='-g' ./configure --prefix=/home/ubuntu/scamper && make && make install
-export PATH="/home/ubuntu/scamper/bin/:$PATH"
-sudo echo "export PATH="/home/ubuntu/scamper/bin/:$PATH"" >> /root/.bashrc
-source /root/.bashrc
-# Check if scamper command is available
-if command -v scamper &> /dev/null; then
-    echo "Scamper is installed successfully"
-fi
