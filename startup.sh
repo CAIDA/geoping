@@ -67,6 +67,10 @@ sudo apt install -y build-essential
 wget -P /home/ubuntu https://www.caida.org/~mjl/tmp/scamper-cvs-20230428.tar.gz
 tar -xzf /home/ubuntu/scamper-cvs-20230428.tar.gz -C /home/ubuntu
 cd /home/ubuntu/scamper-cvs-20230428/ && CFLAGS='-g' ./configure --prefix=/home/ubuntu/scamper && make && make install
-echo "Setting Path"
 export PATH="/home/ubuntu/scamper/bin/:$PATH"
-echo "Done setting path"
+sudo echo "export PATH="/home/ubuntu/scamper/bin/:$PATH"" >> /root/.bashrc
+source /root/.bashrc
+# Check if scamper command is available
+if command -v scamper &> /dev/null; then
+    echo "Scamper is installed successfully"
+fi
