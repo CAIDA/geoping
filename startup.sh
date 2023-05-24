@@ -61,6 +61,8 @@ fi
 
 # bring up the instance to the VPN network
 sudo netbird up --setup-key "$2"
-sudo echo -e "master: 100.73.2.67" | sudo tee /etc/salt/minion.d/master.conf
-sudo rm /etc/salt/pki/minion/minion_master.pub
-sudo systemctl restart salt-minion.service
+
+# Code to update a master
+# sudo echo -e "master: 100.73.2.67" | sudo tee /etc/salt/minion.d/master.conf
+# sudo rm /etc/salt/pki/minion/minion_master.pub
+# sudo systemctl restart salt-minion.service
