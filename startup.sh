@@ -54,9 +54,9 @@ if ! command -v scamper &> /dev/null; then
     sudo apt install -y scamper
     sudo apt install -y scamper-utils
 else
-    sudo apt-get update
-    sudo apt-get upgrade scamper
-    sudo apt-get upgrade scamper-utils
+    sudo apt update
+    sudo apt install --only-upgrade -y scamper
+    sudo apt install --only-upgrade -y scamper-utils
 fi
 
 # Check if bzip2 is installed
