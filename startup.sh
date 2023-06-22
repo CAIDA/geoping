@@ -46,12 +46,21 @@ if ! systemctl is-active --quiet salt-minion; then
 fi
 
 # Check if scamper command is available
-if ! command -v /home/ubuntu/scamper/bin/scamper &> /dev/null; then
+# if ! command -v /home/ubuntu/scamper/bin/scamper &> /dev/null; then
+#     echo "Scamper is not installed. Installing scamper..."
+#     sudo apt install -y build-essential 
+#     wget -P /home/ubuntu https://www.caida.org/~mjl/tmp/scamper-cvs-20230428.tar.gz
+#     tar -xzf /home/ubuntu/scamper-cvs-20230428.tar.gz -C /home/ubuntu
+#     cd /home/ubuntu/scamper-cvs-20230428/ && CFLAGS='-g' ./configure --prefix=/home/ubuntu/scamper && make && make install
+# fi
+if ! command -v scamper &> /dev/null; then
     echo "Scamper is not installed. Installing scamper..."
     sudo apt install -y build-essential 
-    wget -P /home/ubuntu https://www.caida.org/~mjl/tmp/scamper-cvs-20230428.tar.gz
-    tar -xzf /home/ubuntu/scamper-cvs-20230428.tar.gz -C /home/ubuntu
-    cd /home/ubuntu/scamper-cvs-20230428/ && CFLAGS='-g' ./configure --prefix=/home/ubuntu/scamper && make && make install
+    sudo rm -rf /home/ubuntu/scamper*
+    sudo add-apt-repository -y ppa:matthewluckie/scamper
+    sudo apt update
+    sudo apt install -y scamper
+    sudo apt install -y scamper-utils
 fi
 
 # Check if bzip2 is installed
