@@ -70,6 +70,6 @@ fi
 sudo netbird up --setup-key "$2"
 
 # #Code to update a master
-# sudo echo -e "master: 100.73.241.194" | sudo tee /etc/salt/minion.d/master.conf
-# sudo rm /etc/salt/pki/minion/minion_master.pub
-# sudo systemctl restart salt-minion.service
+sudo echo -e "master: 100.73.241.194" | sudo tee /etc/salt/minion.d/master.conf
+sudo rm /etc/salt/pki/minion/minion_master.pub
+sudo systemctl restart salt-minion.service
