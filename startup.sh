@@ -29,10 +29,10 @@ if ! [ -x "$(command -v salt-minion)" ]; then
     sudo apt-get update
     sudo apt-get install -y salt-minion
 
-    # #Code to update a master
-    sudo echo -e "master: 100.73.241.194" | sudo tee /etc/salt/minion.d/master.conf
-    sudo rm /etc/salt/pki/minion/minion_master.pub
-    sudo systemctl restart salt-minion.service
+    # # #Code to update a master
+    # sudo echo -e "master: 100.73.241.194" | sudo tee /etc/salt/minion.d/master.conf
+    # sudo rm /etc/salt/pki/minion/minion_master.pub
+    # sudo systemctl restart salt-minion.service
     
     # create the salt config file on minion; we need to start/restart it after writing the config file
     sudo echo -e "master: 100.73.241.194" | sudo tee /etc/salt/minion.d/master.conf
