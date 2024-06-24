@@ -38,6 +38,20 @@ if ! systemctl is-active --quiet salt-master; then
     sudo systemctl enable salt-master && sudo systemctl start salt-master
 fi
 
+# Install Salt Minion if not installed (assuming this script runs on minions as well)
+if ! [ -x "$(command -v salt-minion)" ]; then
+    echo "Salt Minion is not installed. Installing now..."
+    sudo apt-get install -y salt-minion
+    echo "Salt Minion installed."
+fi
+
+# Configure Salt Minion to connect to the Salt Master
+sudo sed -i "s/#master: salt/master: $MASTER_HOSTNAME/" /etc/salt/minion
+
+# Start and enable Salt Minion service
+sudo systemctl start salt-minion
+sudo systemctl enable salt-minion
+
 # Install Salt Python client
 if ! python3 -c "import salt.client" &> /dev/null; then
     echo "Salt Python client is not installed. Installing now..."
