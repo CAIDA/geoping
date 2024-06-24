@@ -38,6 +38,14 @@ if ! systemctl is-active --quiet salt-master; then
     sudo systemctl enable salt-master && sudo systemctl start salt-master
 fi
 
+# Install Salt Python client
+if ! python3 -c "import salt.client" &> /dev/null; then
+    echo "Salt Python client is not installed. Installing now..."
+    sudo apt-get install -y python3-pip
+    sudo pip3 install salt
+    echo "Salt Python client installed."
+fi
+
 # Install AWS CLI if not installed
 if ! command -v aws &> /dev/null; then
     echo "AWS CLI is not installed. Installing now..."
