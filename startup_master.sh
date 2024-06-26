@@ -25,8 +25,8 @@ fi
 # Install Salt Master if not installed
 if ! [ -x "$(command -v salt-master)" ]; then
     echo "Salt Master is not installed. Installing now..."
-    sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-    echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
+    sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+    echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/latest noble main" | sudo tee /etc/apt/sources.list.d/salt.list
     sudo apt-get update
     sudo apt-get install -y salt-master
     echo "Salt Master installed."
@@ -37,20 +37,6 @@ if ! systemctl is-active --quiet salt-master; then
     echo "Salt Master is not running. Starting now..."
     sudo systemctl enable salt-master && sudo systemctl start salt-master
 fi
-
-## Install Salt Minion if not installed (assuming this script runs on minions as well)
-#if ! [ -x "$(command -v salt-minion)" ]; then
-#    echo "Salt Minion is not installed. Installing now..."
-#    sudo apt-get install -y salt-minion
-#    echo "Salt Minion installed."
-#fi
-#
-## Configure Salt Minion to connect to the Salt Master
-#sudo sed -i "s/#master: salt/master: $MASTER_HOSTNAME/" /etc/salt/minion
-#
-## Start and enable Salt Minion service
-#sudo systemctl start salt-minion
-#sudo systemctl enable salt-minion
 
 # Install Salt Python client
 if ! python3 -c "import salt.client" &> /dev/null; then
