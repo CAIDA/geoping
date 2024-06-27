@@ -25,8 +25,8 @@ fi
 # Install Salt Master if not installed
 if ! [ -x "$(command -v salt-master)" ]; then
     echo "Salt Master is not installed. Installing now..."
-    sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-    echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/latest noble main" | sudo tee /etc/apt/sources.list.d/salt.list
+    sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+    echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/latest noble main" | sudo tee /etc/apt/sources.list.d/salt.list
     sudo apt-get update
     sudo apt-get install -y salt-master
     echo "Salt Master installed."
