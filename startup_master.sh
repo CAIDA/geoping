@@ -42,6 +42,7 @@ fi
 if ! python3 -c "import salt.client" &> /dev/null; then
     echo "Salt Python client is not installed. Installing now..."
     sudo apt-get install -y python3-pip python3-m2crypto python3-zmq
+    sudo rm /usr/lib/python3.*/EXTERNALLY-MANAGED
     sudo pip3 install salt
     echo "Salt Python client installed."
 fi
@@ -81,3 +82,14 @@ fi
 sudo netbird up --setup-key "$2"
 
 echo "Salt Master setup completed."
+
+if [ ! -d /srv/salt ]; then
+    sudo mkdir -p /srv/salt
+    echo "/srv/salt directory created."
+fi
+
+# Example to create top.sls
+if [ ! -f /srv/salt/ipaddr.txt ]; then
+    sudo cp /home/ubuntu/ipaddr.txt /srv/salt/ipaddr.txt
+    echo "Created /srv/salt/ipaddr.txt"
+fi

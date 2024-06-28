@@ -70,25 +70,6 @@ if ! command -v bzip2 &> /dev/null; then
     sudo apt-get install -y bzip2
 fi
 
-sudo echo -e "[Unit]
-Description=The Salt Master Server
-Documentation=man:salt-master(1) file:///usr/share/doc/salt/html/contents.html https://docs.saltproject.io/en/latest/contents.html
-After=network.target
-
-[Service]
-LimitNOFILE=100000
-Type=notify
-NotifyAccess=all
-ExecStart=/usr/bin/salt-master
-User=root
-Group=salt
-CacheDirectory=salt/master
-RuntimeDirectory=salt
-StateDirectory=salt/pki/master
-
-[Install]
-WantedBy=multi-user.target" | sudo tee /lib/systemd/system/salt-master.service
-
 # bring up the instance to the VPN network
 sudo netbird up --setup-key "$2"
 
