@@ -38,14 +38,7 @@ if ! systemctl is-active --quiet salt-master; then
     sudo systemctl enable salt-master && sudo systemctl start salt-master
 fi
 
-# Install Salt Python client
-if ! python3 -c "import salt.client" &> /dev/null; then
-    echo "Salt Python client is not installed. Installing now..."
-    sudo apt-get install -y python3-pip python3-m2crypto python3-zmq
-    sudo rm /usr/lib/python3.*/EXTERNALLY-MANAGED
-    sudo pip3 install salt
-    echo "Salt Python client installed."
-fi
+
 
 # Install AWS CLI if not installed
 if ! command -v aws &> /dev/null; then
@@ -83,13 +76,47 @@ sudo netbird up --setup-key "$2"
 
 echo "Salt Master setup completed."
 
+
 if [ ! -d /srv/salt ]; then
     sudo mkdir -p /srv/salt
     echo "/srv/salt directory created."
 fi
 
-# Example to create top.sls
+# Example to create ipaddr.txt
 if [ ! -f /srv/salt/ipaddr.txt ]; then
     sudo cp /home/ubuntu/ipaddr.txt /srv/salt/ipaddr.txt
     echo "Created /srv/salt/ipaddr.txt"
+fi
+
+# Define a temporary sudoers file
+SUDOERS_TMP=$(mktemp /tmp/sudoers.XXXXXX)
+# Copy the current sudoers file to the temporary file
+sudo cp /etc/sudoers $SUDOERS_TMP
+
+# Modify the temporary file with sed
+if ! grep -q "Defaults        env_reset, !env_reset" $SUDOERS_TMP; then
+    sudo sed -i 's/Defaults        env_reset/Defaults        env_reset, \!env_reset/g' $SUDOERS_TMP
+fi
+
+# Validate the modified sudoers file
+sudo visudo -c -f $SUDOERS_TMP
+
+# If validation is successful, replace the original sudoers file
+if [ $? -eq 0 ]; then
+    sudo cp $SUDOERS_TMP /etc/sudoers
+    echo "Successfully updated /etc/sudoers"
+else
+    echo "Error in $SUDOERS_TMP. Check the file for issues."
+fi
+
+# Clean up temporary file
+sudo rm $SUDOERS_TMP
+
+# Install Salt Python client
+if ! sudo python3 -c "import salt.client" &> /dev/null; then
+    echo "Salt Python client is not installed. Installing now..."
+    sudo apt-get install -y python3-pip python3-m2crypto python3-zmq
+    sudo rm /usr/lib/python3.*/EXTERNALLY-MANAGED
+    pip3 install salt
+    echo "Salt Python client installed."
 fi
