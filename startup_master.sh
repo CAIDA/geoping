@@ -94,7 +94,7 @@ SUDOERS_TMP=$(mktemp /tmp/sudoers.XXXXXX)
 sudo cp /etc/sudoers $SUDOERS_TMP
 
 # Modify the temporary file with sed
-if ! grep -q "Defaults\tenv_reset" $SUDOERS_TMP; then
+if ! grep -q "Defaults\tenv_reset, !env_reset" $SUDOERS_TMP; then
     sudo sed -i 's/Defaults        env_reset/Defaults        env_reset, \!env_reset/g' $SUDOERS_TMP
     echo "Successfully Replaced"
 fi
