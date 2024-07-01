@@ -122,5 +122,6 @@ if ! sudo python3 -c "import salt.client" &> /dev/null; then
     echo "Salt Python client installed."
     if ! sudo python3 -c "import salt.client" &> /dev/null; then
         echo "still not installed"
+        pip3 install salt
     fi
 fi
