@@ -134,11 +134,8 @@ if ! sudo python3 -c "import salt.client" &> /dev/null; then
     echo "Salt Python client is not installed. Installing now..."
     sudo apt-get install -y python3-pip python3-m2crypto python3-zmq
     sudo rm /usr/lib/python3.*/EXTERNALLY-MANAGED
-    pwd
-    cd /home/
-    pwd
-    ls
-    #pip3 install salt
+    cd /home/ubuntu
+    /usr/bin/python3 -m pip install salt
 fi
 
     
