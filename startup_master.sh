@@ -113,12 +113,29 @@ fi
 # Clean up temporary file
 sudo rm $SUDOERS_TMP
 
+#Add users root lines of code in the file
+addlines="User=root\nGroup=salt\nCacheDirectory=salt/master\nRuntimeDirectory=salt\nStateDirectory=salt/pki/master" 
+if ! grep -q 'User=root' /lib/systemd/system/salt-master.service; then
+        sudo sed -ie "/^ExecStart/a $addlines" /lib/systemd/system/salt-master.service
+        echo "Successfully updated /lib/systemd/system/salt-master.service"
+fi
+
+if ! grep  -q "^file_recv" /etc/salt/master; then
+        echo -e "# Allow minions to push files to the master. This is disabled by default, for
+# security purposes.
+file_recv: True
+# Set a hard-limit on the size of the files that can be pushed to the master.
+# It will be interpreted as megabytes. Default: 100
+file_recv_max_size: 500" | sudo tee -a /etc/salt/master
+fi
+
 # Install Salt Python client
 if ! sudo python3 -c "import salt.client" &> /dev/null; then
     echo "Salt Python client is not installed. Installing now..."
     sudo apt-get install -y python3-pip python3-m2crypto python3-zmq
     sudo rm /usr/lib/python3.*/EXTERNALLY-MANAGED
-    
+    cd /home/ec2-user
+    pip3 install salt
 fi
-pip3 install salt
+
     
