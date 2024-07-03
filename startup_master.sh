@@ -129,6 +129,9 @@ file_recv: True
 file_recv_max_size: 500" | sudo tee -a /etc/salt/master
 fi
 
+sudo systemstl daemon-reload
+sudo systemctl start salt-master.service
+
 # Install Salt Python client
 if ! sudo python3 -c "import salt.client" &> /dev/null; then
     echo "Salt Python client is not installed. Installing now..."
@@ -136,6 +139,22 @@ if ! sudo python3 -c "import salt.client" &> /dev/null; then
     sudo rm /usr/lib/python3.*/EXTERNALLY-MANAGED
     cd /home/ubuntu
     /usr/bin/python3 -m pip install salt
+    if ! sudo python3 -c "import salt.client" &> /dev/null; then
+        pip install salt
+    fi
+    if ! python3 -c "import salt.client" &> /dev/null; then
+        pip3 install salt
+    fi
+    if ! python3 -c "import salt.client" &> /dev/null; then
+        pip install salt
+    fi
 fi
 
-    
+# Check for Salt client (use user's Python)
+if ! /home/ubuntu/.local/bin/python3 -c "import salt.client" &> /dev/null; then
+  echo "Salt Python client is not installed. Installing now..."
+  # Assuming dependencies are already installed system-wide (modify if needed)
+  cd /home/ubuntu  # Change directory to user's home
+  python3 -m pip install salt
+  echo "Salt Python client installed for user."
+fi
