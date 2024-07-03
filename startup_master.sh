@@ -121,9 +121,18 @@ if ! grep -q 'User=root' /lib/systemd/system/salt-master.service; then
         sudo systemstl daemon-reload
 fi
 
-if ! sudo grep -q file_recv /etc/salt/master; then
+if ! sudo grep file_recv /etc/salt/master; then
     sudo sed -i 's/#file_recv: False/file_recv: True/g' /etc/salt/master
     sudo sed -i 's/#file_recv_max_size: 100/file_recv_max_size: 100/g' /etc/salt/master
+fi
+
+if ! sudo grep 'interface: 0.0.0.0' /etc/salt/master; then
+    ip_address=$(ifconfig wt0 | grep 'inet'| awk '{print $2}')
+    sudo sed -i "s/interface: 0.0.0.0/interface: $ip_address/g" /etc/salt/master
+fi
+
+if ! sudo grep 'user: salt' /etc/salt/master; then
+    sudo sed -i 's/user: salt/user: root/g' /etc/salt/master
 fi
 sudo systemctl restart salt-master
 
