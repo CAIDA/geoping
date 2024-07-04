@@ -158,7 +158,9 @@ fi
 if ! /home/ubuntu/.local/bin/python3 -c "import salt.client" &> /dev/null; then
   echo "Salt Python client is not installed. Installing now..."
   # Assuming dependencies are already installed system-wide (modify if needed)
-  cd /home/ubuntu  # Change directory to user's home
+  sudo apt-get install python3-venv
+  python3 -m venv /home/ubuntu/venv
+  source /home/ubuntu/venv/bin/activate
   python3 -m pip install salt
   echo "Salt Python client installed for user."
 fi
