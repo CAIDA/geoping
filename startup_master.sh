@@ -141,26 +141,10 @@ if ! sudo python3 -c "import salt.client" &> /dev/null; then
     echo "Salt Python client is not installed. Installing now..."
     sudo apt-get install -y python3-pip python3-m2crypto python3-zmq
     sudo rm /usr/lib/python3.*/EXTERNALLY-MANAGED
-    cd /home/ubuntu
-    /usr/bin/python3 -m pip install salt
-    if ! sudo python3 -c "import salt.client" &> /dev/null; then
-        pip install salt
-    fi
-    if ! python3 -c "import salt.client" &> /dev/null; then
-        pip3 install salt
-    fi
-    if ! python3 -c "import salt.client" &> /dev/null; then
-        pip install salt
-    fi
+    sudo apt-get install python3-venv
+    python3 -m venv myenv
+    source myenv/bin/activate
+    python3 -m pip install salt
+    echo "Salt Python client installed for user."
 fi
 
-# Check for Salt client (use user's Python)
-if ! /home/ubuntu/.local/bin/python3 -c "import salt.client" &> /dev/null; then
-  echo "Salt Python client is not installed. Installing now..."
-  # Assuming dependencies are already installed system-wide (modify if needed)
-  sudo apt-get install python3-venv
-  python3 -m venv /home/ubuntu/venv
-  source /home/ubuntu/venv/bin/activate
-  python3 -m pip install salt
-  echo "Salt Python client installed for user."
-fi
