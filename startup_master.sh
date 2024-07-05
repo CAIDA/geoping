@@ -139,11 +139,10 @@ sudo systemctl restart salt-master
 # Install Salt Python client
 if ! sudo python3 -c "import salt.client" &> /dev/null; then
     echo "Salt Python client is not installed. Installing now..."
-    sudo apt-get install -y python3-pip python3-m2crypto python3-zmq
-    sudo rm /usr/lib/python3.*/EXTERNALLY-MANAGED
-    sudo apt install python3.12-venv
+    sudo apt-get install -y python3-pip python3-m2crypto python3-zmq python3.12-venv
+    sudo rm -f /usr/lib/python3.*/EXTERNALLY-MANAGED
     python3 -m venv /home/ubuntu/myenv
-    source myenv/bin/activate
+    source /home/ubuntu/myenv/bin/activate
     python3 -m pip install salt
     echo "Salt Python client installed for user."
 fi
