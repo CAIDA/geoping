@@ -127,13 +127,15 @@ if sudo grep file_recv /etc/salt/master; then
 fi
 
 if sudo grep 'interface: 0.0.0.0' /etc/salt/master; then
-    ip_address=$(ifconfig wt0 | grep 'inet'| awk '{print $2}')
+    ip_address=$(hostname -I | awk '{print $2}')
     sudo sed -i "s/#interface: 0.0.0.0/interface: $ip_address/g" /etc/salt/master
 fi
 
 if sudo grep 'user: salt' /etc/salt/master; then
     sudo sed -i 's/user: salt/user: root/g' /etc/salt/master
 fi
+
+sudo systemctl daemon-reload
 sudo systemctl restart salt-master
 
 # Install Salt Python client
