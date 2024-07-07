@@ -126,13 +126,25 @@ if sudo grep file_recv /etc/salt/master; then
     sudo sed -i 's/#file_recv_max_size: 100/file_recv_max_size: 100/g' /etc/salt/master
 fi
 
-if sudo grep 'interface: 0.0.0.0' /etc/salt/master; then
-    ip_address=$(hostname -I | awk '{print $2}')
-    sudo sed -i "s/#interface: 0.0.0.0/interface: $ip_address/g" /etc/salt/master
-fi
-
 if sudo grep 'user: salt' /etc/salt/master; then
     sudo sed -i 's/user: salt/user: root/g' /etc/salt/master
+fi
+ 
+if sudo grep '#file_roots' /etc/salt/master; then
+    sudo sed -i '/^#file_roots:/ ,+2 s/^#//' /etc/salt/master
+fi
+
+if sudo grep 'interface: 0.0.0.0' /etc/salt/master; then
+    # Loop until there are at least three IP addresses
+    while true; do
+        ip_count=$(hostname -I | awk '{print NF}')
+        if [ "$ip_count" -eq 3 ]; then
+            break
+        fi
+        sleep 1
+    done
+    ip_address=$(hostname -I | awk '{print $2}')
+    sudo sed -i "s/#interface: 0.0.0.0/interface: $ip_address/g" /etc/salt/master
 fi
 
 sudo systemctl daemon-reload
