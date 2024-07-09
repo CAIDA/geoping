@@ -15,14 +15,23 @@ args = parser.parse_args()
 
 ############### PARAMETERS ###########
 TARGET = args.regex
-IP_ADDRESS_LIST_FILENAME =  'ipaddr.txt'#'itdk-run-20230308.addrs.trimmed'
+if args.launch == 'trace':
+    with open('trace.json', 'r') as f:
+        servers = json.load(f)
+    with open('hostnames.txt', 'w') as host_file:
+        pass
+    with open('hostnames.txt', 'a') as host_file:
+        for server in servers:
+            host_file.write(server['host'].split(':')[0] + '\n')  
+    IP_ADDRESS_LIST_FILENAME = ip_file
+else:
+    IP_ADDRESS_LIST_FILENAME =  'ipaddr.txt'#'itdk-run-20230308.addrs.trimmed'
 SCAMPER_PORT = 5001
 SCAMPER_PPS = 1500
 SC_PINGER_LOG_FILEAME = "ping.log"
 SC_ATTACH_LOG_FILEAME = "traceroute.log"
 GEOPING_RESULTS_DIR = "/home/ubuntu/geoping-results"
 ######################################
-
 
 # Instantiate a Client
 local_client = salt.client.LocalClient()
