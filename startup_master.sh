@@ -158,6 +158,8 @@ if ! sudo python3 -c "import salt.client" &> /dev/null; then
     python3 -m venv /home/ubuntu/myenv
     source /home/ubuntu/myenv/bin/activate
     python3 -m pip install salt
-    echo "Salt Python client installed for user."
+    sudo chown -R ubuntu:ubuntu myenv/
+    pip3 install boto3
+    echo "Salt Python client and boto3 installed for user."
 fi
 

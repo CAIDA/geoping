@@ -6,38 +6,32 @@ import json
 import os
 import shutil
 import argparse
+import boto3
+from botocore.exceptions import NoCredentialsError
 
 # Define the argument parser and parse it
 parser = argparse.ArgumentParser()
 parser.add_argument("--regex", type=str, default="aws-us-east-2*", help="regex for targeted vantage points")
 parser.add_argument("--launch", type=str, default="ping", help="Options to launch the experiment, ping = icmp-echo ping, ping-tcp = tcp ping, trace = traceroute")
+parser.add_argument("--flags", type=str, default="", help="add the flags you want to conduct complext tests")
 args = parser.parse_args()
 
 ############### PARAMETERS ###########
 TARGET = args.regex
-if args.launch == 'trace':
-    with open('trace.json', 'r') as f:
-        servers = json.load(f)
-    with open('hostnames.txt', 'w') as host_file:
-        pass
-    with open('hostnames.txt', 'a') as host_file:
-        for server in servers:
-            host_file.write(server['host'].split(':')[0] + '\n')  
-    IP_ADDRESS_LIST_FILENAME = ip_file
-else:
-    IP_ADDRESS_LIST_FILENAME =  'ipaddr.txt'#'itdk-run-20230308.addrs.trimmed'
+IP_ADDRESS_LIST_FILENAME =  'ipaddr.txt'#'itdk-run-20230308.addrs.trimmed'
 SCAMPER_PORT = 5001
 SCAMPER_PPS = 1500
 SC_PINGER_LOG_FILEAME = "ping.log"
 SC_ATTACH_LOG_FILEAME = "traceroute.log"
 GEOPING_RESULTS_DIR = "/home/ubuntu/geoping-results"
+BUCKET = 'geoping-results'
 ######################################
 
 # Instantiate a Client
 local_client = salt.client.LocalClient()
 
 # Create Measurement ID
-DATE = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+DATE = datetime.now().strftime("%Y-%m-%d_%H.%M.%S")
 RESULT_FILE_NAME="geoloc-pinger.{}.warts".format(DATE)
 print("Measurement ID: {}\n".format(RESULT_FILE_NAME))
 
@@ -52,9 +46,9 @@ print()
 CMD_REMOVE_AND_CREATE_RESULTS_DIR = "sudo rm -rf {}; mkdir {} && echo 'Created {} directory'".format(GEOPING_RESULTS_DIR, GEOPING_RESULTS_DIR, GEOPING_RESULTS_DIR)
 CMD_KILL_SCAMPER = "sudo kill -9 `sudo lsof -ti :{}` 2>/dev/null && echo 'Killed process (if any) on port 5001'".format(SCAMPER_PORT, )
 CMD_START_SCAMPER = "sudo scamper -P {} -p {} -D && echo 'Started scamper on port 5001' && sleep 1".format(SCAMPER_PORT, SCAMPER_PPS)
-CMD_LAUNCH_SC_PINGER = "sudo sc_pinger -a /home/ubuntu/{} -o {}/{} -p {} >{}/{} ; tail -1 {}/{}".format(IP_ADDRESS_LIST_FILENAME, GEOPING_RESULTS_DIR, RESULT_FILE_NAME, SCAMPER_PORT, GEOPING_RESULTS_DIR, SC_PINGER_LOG_FILEAME, GEOPING_RESULTS_DIR,SC_PINGER_LOG_FILEAME)
-CMD_LAUNCH_SC_PINGER_TCP = "sudo sc_pinger -a /home/ubuntu/{} -o {}/{} -p {} -m 'tcp-syn-sport -d 80' >{}/{} ; tail -1 {}/{}".format(IP_ADDRESS_LIST_FILENAME, GEOPING_RESULTS_DIR, RESULT_FILE_NAME, SCAMPER_PORT, GEOPING_RESULTS_DIR, SC_PINGER_LOG_FILEAME, GEOPING_RESULTS_DIR,SC_PINGER_LOG_FILEAME)
-CMD_LAUNCH_SC_ATTACH = "sudo sc_attach -c 'trace' -i /home/ubuntu/{} -o {}/{} -p {}".format(IP_ADDRESS_LIST_FILENAME, GEOPING_RESULTS_DIR, RESULT_FILE_NAME, SCAMPER_PORT)
+CMD_LAUNCH_SC_PINGER = "sudo sc_pinger -a /home/ubuntu/{} -o {}/{} -p {} {} >{}/{} ; tail -1 {}/{}".format(IP_ADDRESS_LIST_FILENAME, GEOPING_RESULTS_DIR, RESULT_FILE_NAME, SCAMPER_PORT, args.flags, GEOPING_RESULTS_DIR, SC_PINGER_LOG_FILEAME, GEOPING_RESULTS_DIR,SC_PINGER_LOG_FILEAME)
+CMD_LAUNCH_SC_PINGER_TCP = "sudo sc_pinger -a /home/ubuntu/{} -o {}/{} -p {} -m 'tcp-syn-sport -d 80' {} >{}/{} ; tail -1 {}/{}".format(IP_ADDRESS_LIST_FILENAME, GEOPING_RESULTS_DIR, RESULT_FILE_NAME, SCAMPER_PORT, args.flags, GEOPING_RESULTS_DIR, SC_PINGER_LOG_FILEAME, GEOPING_RESULTS_DIR,SC_PINGER_LOG_FILEAME)
+CMD_LAUNCH_SC_ATTACH = "sudo sc_attach -c 'trace {}' -i /home/ubuntu/{} -o {}/{} -p {}".format(args.flags, IP_ADDRESS_LIST_FILENAME, GEOPING_RESULTS_DIR, RESULT_FILE_NAME, SCAMPER_PORT)
 CMD_COMPRESS_RESULT_FILE = "bzip2 -9 -f {}/{} && echo 'Compressed result file'".format(GEOPING_RESULTS_DIR,RESULT_FILE_NAME)
 CMD_LAUNCH_EXPERIMENT = ""
 if(args.launch == 'ping'):
@@ -83,6 +77,9 @@ minions_cache_dir = '/var/cache/salt/master/minions'
 aggregate_results_dir_basename = COMPRESSED_RESULT_FILENAME[:-10]
 aggregate_results_dir = os.path.join('/home/ubuntu/aggregate-results', aggregate_results_dir_basename)
 
+print("aggregate results dir base", aggregate_results_dir_basename)
+print("aggregate results dir", aggregate_results_dir)
+
 # Get a list of all items in the directory
 items = os.listdir(minions_cache_dir)
 # Use a list comprehension to filter out non-directories
@@ -100,3 +97,34 @@ for minion in minions_names:
 
         # Copy the source file to the destination file path
         shutil.move(source_file_path, destination_file_path)
+
+def upload_directory_to_s3(local_directory, bucket_name):
+    """
+    Uploads the contents of a local directory to an S3 bucket.
+
+    :param local_directory: Path to the local directory
+    :param bucket_name: Name of the S3 bucket
+    """
+    s3_client = boto3.client('s3')
+
+    for root, dirs, files in os.walk(local_directory):
+
+        dir_path = os.path.basename(local_directory)
+
+        for file in files:
+            local_path = os.path.join(root, file)
+            relative_path = os.path.relpath(local_path, local_directory)
+            s3_path = os.path.join(dir_path, relative_path).replace("\\", "/")
+
+            try:
+                s3_client.upload_file(local_path, bucket_name, s3_path)
+                print(f"Successfully uploaded {local_path} to s3://{bucket_name}/{s3_path}")
+            except FileNotFoundError:
+                print(f"File not found: {local_path}")
+            except NoCredentialsError:
+                print("Credentials not available")
+            except Exception as e:
+                print(f"Failed to upload {local_path} to s3://{bucket_name}/{s3_path}: {e}")
+
+# Upload the entire aggregate results directory to S3
+upload_directory_to_s3(aggregate_results_dir, BUCKET)
