@@ -105,7 +105,13 @@ def upload_directory_to_s3(local_directory, bucket_name):
     :param local_directory: Path to the local directory
     :param bucket_name: Name of the S3 bucket
     """
-    s3_client = boto3.client('s3')
+    with open('config.json', 'r') as config:
+        credentials = json.load(config)
+
+    s3_client = boto3.client('s3', 
+        aws_access_key_id=credentials['access_key'],
+        aws_secret_access_key=credentials['secret_key'],
+        region_name="us-east-1")
 
     for root, dirs, files in os.walk(local_directory):
 
