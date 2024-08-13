@@ -195,3 +195,28 @@ if [ ! nginx -v ]; then
 else
     echo "Nginx installed."
 fi
+
+echo 'server {
+        server_name enter-your-ec2-dnsnamehere;
+        listen 80;
+        access_log /var/log/nginx/grafana.log;
+
+        location / {
+                proxy_pass http://localhost:3000;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-Forwarded-Host $host:$server_port;
+                proxy_set_header X-Forwarded-Server $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+}' | sudo tee /etc/nginx/conf.d/grafana.conf > /dev/null
+
+# Test Nginx configuration
+if sudo nginx -t; then
+    echo "Nginx configuration is valid."
+else
+    echo "Nginx configuration is invalid."
+    exit 1
+fi
+
+#restart ngix
+sudo systemctl restart nginx
