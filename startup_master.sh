@@ -163,3 +163,35 @@ if ! sudo python3 -c "import salt.client" &> /dev/null; then
     echo "Salt Python client and boto3 installed for user."
 fi
 
+# Check if Grafana is installed
+if [! grafana-server -v ]; then
+	#tutorial - https://youtu.be/d5bNTgaLhmc?si=Q-C0P1JdKGV8AS_x
+	#Update ubuntu
+	sudo apt-get update -y
+
+	#Install necessary pacakges
+	sudo apt-get install wget curl gnupg2 apt-transport-https software-properties-common -y
+
+	#Add gpg key
+	wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+
+	#updo repo list of ubuntu
+	echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+
+	#refresh and update apt-get
+	sudo apt-get update -y
+
+	#Install Grafana 
+	sudo apt-get install grafana -y
+	echo "Grafana is installed successfully."
+else
+	echo "Grafana is already installed."
+fi
+
+# Check if Nginx is installed
+if [ ! nginx -v ]; then
+	sudo apt-get install nginx -y
+    echo "Nginx is installed successfully."
+else
+    echo "Nginx installed."
+fi

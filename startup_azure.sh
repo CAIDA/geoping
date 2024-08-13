@@ -54,7 +54,6 @@ if ! command -v scamper &> /dev/null; then
     echo "Scamper is not installed. Installing scamper..."
     sudo apt install -y build-essential 
     sudo rm -rf /home/ubuntu/scamper*
-    sudo add-apt-repository -y ppa:matthewluckie/scamper
     sudo apt update
     sudo apt install -y scamper
     sudo apt install -y scamper-utils
