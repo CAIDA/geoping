@@ -28,22 +28,21 @@ if ! [ -x "$(command -v salt-minion)" ]; then
     echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/latest noble main" | sudo tee /etc/apt/sources.list.d/salt.list
     sudo apt-get update
     sudo apt-get install -y salt-minion
-
-    # #Code to update a master
-    sudo echo -e "master: $3" | sudo tee /etc/salt/minion.d/master.conf
-    sudo rm /etc/salt/pki/minion/minion_master.pub
-    sudo systemctl restart salt-minion.service
-    
-    # create the salt config file on minion; we need to start/restart it after writing the config file
-    sudo echo -e "master: $3" | sudo tee /etc/salt/minion.d/master.conf
-    sudo echo -e "ipv6: false" | sudo tee /etc/salt/minion.d/network.conf
-    sudo echo -e "id: $1" | sudo tee /etc/salt/minion.d/minion.conf
-    
-    sudo systemctl enable salt-minion && sudo systemctl start salt-minion
-    # restart the service to get the config changes
-    echo "Restarting salt-minion.service..."
-    sudo systemctl restart salt-minion.service
 fi
+# #Code to update a master
+sudo echo -e "master: $3" | sudo tee /etc/salt/minion.d/master.conf
+sudo rm /etc/salt/pki/minion/minion_master.pub
+sudo systemctl restart salt-minion.service
+
+# create the salt config file on minion; we need to start/restart it after writing the config file
+sudo echo -e "master: $3" | sudo tee /etc/salt/minion.d/master.conf
+sudo echo -e "ipv6: false" | sudo tee /etc/salt/minion.d/network.conf
+sudo echo -e "id: $1" | sudo tee /etc/salt/minion.d/minion.conf
+
+sudo systemctl enable salt-minion && sudo systemctl start salt-minion
+# restart the service to get the config changes
+echo "Restarting salt-minion.service..."
+sudo systemctl restart salt-minion.service
 
 if ! systemctl is-active --quiet salt-minion; then
     echo "Salt Minion is not running. Starting now..."
