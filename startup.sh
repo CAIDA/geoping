@@ -34,8 +34,6 @@ sudo echo -e "master: $3" | sudo tee /etc/salt/minion.d/master.conf
 sudo rm /etc/salt/pki/minion/minion_master.pub
 sudo systemctl restart salt-minion.service
 
-echo "HAHHAHAHA"
-echo "$3"
 # create the salt config file on minion; we need to start/restart it after writing the config file
 sudo echo -e "master: $3" | sudo tee /etc/salt/minion.d/master.conf
 sudo echo -e "ipv6: false" | sudo tee /etc/salt/minion.d/network.conf
