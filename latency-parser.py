@@ -3,6 +3,7 @@ import subprocess
 import sys
 import boto3
 from datetime import datetime
+import os
 
 def load_ip_hostname_map(trace_file):
     with open(trace_file, 'r') as f:
@@ -91,8 +92,13 @@ if __name__ == "__main__":
         print("Usage: python script.py <warts_file> <trace_file>")
         sys.exit(1)
 
-    warts_file = sys.argv[1]
+    warts_file_directory = sys.argv[1]
     trace_file = sys.argv[2]
     ip_hostname_map = load_ip_hostname_map(trace_file)
-    records = get_latency(warts_file, ip_hostname_map)
-    upload_to_timestream(records, "GeopingTest", "mytable")
+    
+    for warts_file in os.listdir(warts_file_directory):
+        if warts_file.endswith(".warts.bz2"):
+            print(f"Processing file: {warts_file}")
+            full_warts_file_path = os.path.join(warts_file_directory, warts_file)
+            records = get_latency(full_warts_file_path, ip_hostname_map)
+            upload_to_timestream(records, "GeopingTest", "LatencyData")

@@ -164,7 +164,7 @@ if ! sudo python3 -c "import salt.client" &> /dev/null; then
 fi
 
 # Check if Grafana is installed
-if [! grafana-server -v ]; then
+if ! command -v grafana-server &> /dev/null; then
 	#tutorial - https://youtu.be/d5bNTgaLhmc?si=Q-C0P1JdKGV8AS_x
 	#Update ubuntu
 	sudo apt-get update -y
@@ -189,7 +189,7 @@ else
 fi
 
 # Check if Nginx is installed
-if [ ! nginx -v ]; then
+if ! command -v nginx &> /dev/null; then
 	sudo apt-get install nginx -y
     echo "Nginx is installed successfully."
 else
