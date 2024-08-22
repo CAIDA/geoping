@@ -35,11 +35,12 @@ local_client = salt.client.LocalClient()
 DATE = datetime.now().strftime("%Y-%m-%d_%H.%M.%S")
 RESULT_FILE_NAME = "geoloc-pinger_{}.{}.warts".format(args.launch, DATE)
 print("Measurement ID: {}\n".format(RESULT_FILE_NAME))
-
-CMD_REMOVE_AND_CREATE_IP_ADDR_FILE = f"sudo rm /home/ubuntu/{IP_ADDRESS_LIST_FILENAME}*; echo 'Deleted all previous IP files'"
-CMD_REMOVE_AND_CREATE_RESULTS_DIR = f"sudo rm -rf {GEOPING_RESULTS_DIR}; mkdir {GEOPING_RESULTS_DIR} && echo 'Created {GEOPING_RESULTS_DIR} directory'"
-CMD_SPLIT_FILE = f"split -l {CHUNK_SIZE} /home/ubuntu/{IP_ADDRESS_LIST_FILENAME} /home/ubuntu/{IP_ADDRESS_LIST_FILENAME}_"
-CMD_RENAME_FILE = f'counter=0; for i in $(ls -1 /home/ubuntu/{IP_ADDRESS_LIST_FILENAME}_*); do sudo mv "$i" "/home/ubuntu/{IP_ADDRESS_LIST_FILENAME}_$counter.txt"; counter=$((counter + 1)); done ; echo "Splitted and renamed all ip file chunks"'
+MINION_IP_ADDRESS_LIST_FILENAME = 'ipaddr_{}.txt'.format(DATE)
+CMD_REMOVE_AND_CREATE_IP_ADDR_FILE = f"sudo rm /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}*; echo 'Deleted all previous IP files'"
+CMD_CREATE_RESULTS_DIR_IF_NOT_EXISTS = f"sudo mkdir -p {GEOPING_RESULTS_DIR} && echo 'Created {GEOPING_RESULTS_DIR} directory if it did not exist'"
+CMD_REMOVE_RESULTS_DIR = f"sudo rm -rf {GEOPING_RESULTS_DIR}"
+CMD_SPLIT_FILE = f"split -l {CHUNK_SIZE} /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME} /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_"
+CMD_RENAME_FILE = f'counter=0; for i in $(ls -1 /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_*); do sudo mv "$i" "/home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_$counter.txt"; counter=$((counter + 1)); done ; echo "Splitted and renamed all ip file chunks"'
 CMD_KILL_SCAMPER = f"sudo kill -9 $(sudo lsof -ti :{SCAMPER_PORT}) 2>/dev/null && echo 'Killed process (if any) on port {SCAMPER_PORT}'"
 CMD_START_SCAMPER = f"sudo scamper -P {SCAMPER_PORT} -p {SCAMPER_PPS} -D && echo 'Started scamper on port {SCAMPER_PORT}' && sleep 1"
 CMD_AGGREGATE_CHUNK_RESULTS = f"sudo sc_wartscat -o {GEOPING_RESULTS_DIR}/{RESULT_FILE_NAME} {GEOPING_RESULTS_DIR}/geoloc-pinger_{args.launch}.{DATE}_*.warts"
@@ -47,22 +48,16 @@ CMD_COMPRESS_RESULT_FILE = f"bzip2 -9 -f {GEOPING_RESULTS_DIR}/{RESULT_FILE_NAME
 COMPRESSED_RESULT_FILENAME = RESULT_FILE_NAME + '.bz2'
 COMPRESSED_RESULT_FILEPATH = GEOPING_RESULTS_DIR + '/' + COMPRESSED_RESULT_FILENAME
 
-# Remove any existing IP address files from previous runs on the minions
-print("Removing old IP address files from minions...")
-result = local_client.cmd(TARGET, "cmd.run", [CMD_REMOVE_AND_CREATE_IP_ADDR_FILE])
-print(json.dumps(result, indent=4))
-print()
-
 # Copy the IP addresses list file to minions
 print("Copying IP address list file to minions...")
-result = local_client.cmd(TARGET, 'cp.get_file', ['salt://' + IP_ADDRESS_LIST_FILENAME, '/home/ubuntu/' + IP_ADDRESS_LIST_FILENAME])
+result = local_client.cmd(TARGET, 'cp.get_file', ['salt://' + IP_ADDRESS_LIST_FILENAME, '/home/ubuntu/' + MINION_IP_ADDRESS_LIST_FILENAME])
 print("Results of copying ip address list file to all minions")
 print(json.dumps(result, indent=4))
 print()
 
 #Delete and recreate geoping-results directory
-print("Deleting old geoping-results directory and creating a new one...")
-result = local_client.cmd(TARGET, "cmd.run", [CMD_REMOVE_AND_CREATE_RESULTS_DIR])
+print("Creating a new results directory of doesn't exist...")
+result = local_client.cmd(TARGET, "cmd.run", [CMD_CREATE_RESULTS_DIR_IF_NOT_EXISTS])
 print(json.dumps(result, indent=4))
 print()
 
@@ -77,7 +72,7 @@ print()
 print("Running Scamper on each IP address chunk and attaching results...")
 command = f"""
 counter=0
-for ips in $(ls -1 /home/ubuntu/{IP_ADDRESS_LIST_FILENAME}_*); do
+for ips in $(ls -1 /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_*); do
     {CMD_KILL_SCAMPER}
     {CMD_START_SCAMPER}
     sudo sc_attach -c 'trace {args.flags}' -i $ips -o {GEOPING_RESULTS_DIR}/geoloc-pinger_{args.launch}.{DATE}_$counter.warts -p {SCAMPER_PORT}
@@ -137,6 +132,18 @@ for minion in minions_names:
 print(f"Results have been aggregated into {aggregate_results_dir}")
 print()
 
+# Remove any existing IP address files from previous runs on the minions
+print("Removing old IP address files from minions...")
+result = local_client.cmd(TARGET, "cmd.run", [CMD_REMOVE_AND_CREATE_IP_ADDR_FILE])
+print(json.dumps(result, indent=4))
+print()
+
+#Delete and recreate geoping-results directory
+print("Deleting geoping-results directory and creating a new one...")
+result = local_client.cmd(TARGET, "cmd.run", [CMD_REMOVE_RESULTS_DIR])
+print(json.dumps(result, indent=4))
+print()
+
 # Upload the aggregated results directory to S3
 def upload_directory_to_s3(local_directory, bucket_name):
     with open('config.json', 'r') as config:
@@ -167,4 +174,4 @@ def upload_directory_to_s3(local_directory, bucket_name):
 upload_directory_to_s3(aggregate_results_dir, BUCKET)
 
 
-//sudo salt-run jobs.active | sed -n '/Running:/,/StartTime:/p' | sed -e '1d' -e '$d' | awk '/^ *[a-zA-Z]/ { print }' | sed -e 's/^[[:space:]]*//' -e 's/:$//'
+#sudo salt-run jobs.active | sed -n '/Running:/,/StartTime:/p' | sed -e '1d' -e '$d' | awk '/^ *[a-zA-Z]/ { print }' | sed -e 's/^[[:space:]]*//' -e 's/:$//'

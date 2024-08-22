@@ -31,6 +31,7 @@ def get_latency(warts_file, ip_hostname_map):
     for trace in data:
         if trace["type"] == "cycle-start":
             region = trace["hostname"]
+            experiment_start = trace["start_time"]
             provider = region.split("-")[0]
         if trace["type"] == "trace" and trace["stop_reason"] == "COMPLETED":
             dst = trace["dst"]
@@ -43,7 +44,7 @@ def get_latency(warts_file, ip_hostname_map):
                     'Hostname' : hostname,
                     'Destination_address': dst,
                     'rtt': last_hop["rtt"],
-                    'Timestamp': int(datetime.now().timestamp())  # Add current timestamp
+                    'Timestamp': experiment_start  # Add current timestamp
                 })
 
     return rtt_values
@@ -73,7 +74,7 @@ def upload_to_timestream(records, database_name, table_name):
             'TimeUnit': 'SECONDS'
         }
         timestream_records.append(timestream_record)
-
+    print(timestream_records)
     batch_size = 100
     for i in range(0, len(timestream_records), batch_size):
         batch = timestream_records[i:i + batch_size]

@@ -73,3 +73,4 @@ fi
 sudo netbird up --setup-key "$2"
 
 
+sudo scamper -P 5001 -p 1500 -D && echo 'Started scamper on port 5001' && sleep 1
