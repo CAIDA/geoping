@@ -15,7 +15,7 @@
         "ipv6": "2605:a000:0:4::1:1"
     },
     {
-        "url": "http://speedtest.ifnetwork.biz:8080/speedYtest/upload.php",
+        "url": "http://speedtest.ifnetwork.biz:8080/speedtest/upload.php",
         "lat": 39.9611,
         "lon": -82.9989,
         "name": "Columbus, OH",
@@ -168,8 +168,7 @@
         "https_functional": 1,
         "host": "speedtest-as-1.zoominternet.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "72.23.2.114",
-        "asn": "",
-        "ipv6": "2604:9f00:1000::5f"
+        "asn": ""
     },
     {
         "url": "http://speedtest.roweinternet.com:8080/speedtest/upload.php",
@@ -2926,7 +2925,7 @@
         "host": "speedtest.citizens.coop.prod.hosts.ooklaserver.net:8080",
         "ipv4": "66.37.72.26",
         "asn": "",
-        "ipv6": "2001:4828:400:c:19f9:490b:ba2f:2c6a"
+        "ipv6": "2001:4828:400:c:4aa3:43fe:2214:19af"
     },
     {
         "url": "http://speedtest2.mfbroadband.com:8080/speedtest/upload.php",
@@ -2969,7 +2968,8 @@
         "https_functional": 1,
         "host": "lg-chie.fdcservers.net:8080",
         "ipv4": "216.227.142.106",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d129::4"
     },
     {
         "url": "http://speedtest.deft.com:8080/speedtest/upload.php",
@@ -3114,9 +3114,9 @@
         "id": 14229,
         "https_functional": 1,
         "host": "ashburn.va.speedtest.frontier.com:8080",
-        "ipv4": "74.32.190.35",
+        "ipv4": "74.32.190.33",
         "asn": "",
-        "ipv6": "2001:1960:3f80::1"
+        "ipv6": "2001:1960:3f80::3"
     },
     {
         "url": "http://speedtest.iad01.wdc.pilotfiber.com:8080/speedtest/upload.php",
@@ -3259,7 +3259,8 @@
         "https_functional": 1,
         "host": "lg-tor.fdcservers.net:8080",
         "ipv4": "198.255.86.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d055::4"
     },
     {
         "url": "http://falcon.its.utoronto.ca:8080/speedtest/upload.php",
@@ -4040,7 +4041,7 @@
         "host": "secaucus.nj.speedtest.frontier.com:8080",
         "ipv4": "74.42.170.3",
         "asn": "",
-        "ipv6": "2001:1960:3780::3"
+        "ipv6": "2001:1960:3780::1"
     },
     {
         "url": "https://speedtest-usa.pq.hosting:8080/speedtest/upload.php",
@@ -4400,7 +4401,8 @@
         "https_functional": 1,
         "host": "speedtest.bellaliant.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "142.166.184.94",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:4c0:1:3001:8000::a"
     },
     {
         "url": "https://stsaintjohnwireless.rogers.com:8080/speedtest/upload.php",
@@ -4736,7 +4738,8 @@
         "https_functional": 1,
         "host": "speedtest-nl.bellaliant.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "142.163.63.138",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:4c0:1:3001:8000::6"
     },
     {
         "url": "http://speedtest-serve.servimast.com:8080/speedtest/upload.php",
@@ -4996,7 +4999,7 @@
         "id": 60135,
         "https_functional": 1,
         "host": "speedtest.ezfiber.com.mx:8080",
-        "ipv4": "201.168.209.253",
+        "ipv4": "::ffff:201.168.209.253",
         "asn": "",
         "ipv6": "::ffff:201.168.209.253"
     },
@@ -5776,7 +5779,7 @@
         "id": 53540,
         "https_functional": 1,
         "host": "speedtest.netwurx.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "66.175.196.142",
+        "ipv4": "209.242.224.56",
         "asn": "",
         "ipv6": "2607:f4d8:3:10::3"
     },
@@ -5819,7 +5822,7 @@
         "id": 14078,
         "https_functional": 1,
         "host": "speedtest.iRisHarbor.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "198.231.30.50",
+        "ipv4": "149.248.160.250",
         "asn": ""
     },
     {
@@ -7396,7 +7399,8 @@
         "https_functional": 1,
         "host": "barquisimeto.somosthunder.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "38.51.157.5",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2803:3890:3ff:ff00::2"
     },
     {
         "url": "https://speedtest.bqto.inter.com.ve:8080/speedtest/upload.php",
@@ -8190,7 +8194,7 @@
         "id": 60971,
         "https_functional": 1,
         "host": "speedtest.kc2.everfastfiber.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "64.126.7.234",
+        "ipv4": "135.26.226.66",
         "asn": ""
     },
     {
@@ -8488,7 +8492,7 @@
         "id": 41730,
         "https_functional": 1,
         "host": "speednorth.eastex.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:66.171.0.47",
+        "ipv4": "66.171.0.47",
         "asn": "",
         "ipv6": "::ffff:66.171.0.47"
     },
@@ -8573,9 +8577,9 @@
         "id": 14238,
         "https_functional": 1,
         "host": "dallas.tx.speedtest.frontier.com:8080",
-        "ipv4": "172.102.45.3",
+        "ipv4": "172.102.44.253",
         "asn": "",
-        "ipv6": "2606:4c80:1000::b"
+        "ipv6": "2606:4c80:1000::9"
     },
     {
         "url": "http://speedtest.dal1.nitelusa.net:8080/speedtest/upload.php",
@@ -8863,7 +8867,7 @@
         "id": 41731,
         "https_functional": 1,
         "host": "speedsouth.eastex.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "66.171.0.149",
+        "ipv4": "::ffff:66.171.0.149",
         "asn": "",
         "ipv6": "::ffff:66.171.0.149"
     },
@@ -9739,7 +9743,7 @@
         "id": 50728,
         "https_functional": 1,
         "host": "pozarica.speedtest.totalplay.com.mx.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "187.190.128.106",
+        "ipv4": "187.251.142.98",
         "asn": "",
         "ipv6": "2806:2f0:374:7380::10"
     },
@@ -9754,7 +9758,7 @@
         "id": 40630,
         "https_functional": 1,
         "host": "speedtest.fibra360.com.mx:8080",
-        "ipv4": "189.85.100.2",
+        "ipv4": "::ffff:189.85.100.2",
         "asn": "",
         "ipv6": "::ffff:189.85.100.2"
     },
@@ -9784,7 +9788,7 @@
         "id": 35525,
         "https_functional": 1,
         "host": "matzanet.com.mx:8080",
-        "ipv4": "::ffff:201.174.175.3",
+        "ipv4": "201.174.175.3",
         "asn": "",
         "ipv6": "::ffff:201.174.175.3"
     },
@@ -10894,7 +10898,8 @@
         "https_functional": 1,
         "host": "lg-bg.fdcservers.net:8080",
         "ipv4": "66.90.67.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d101::4"
     },
     {
         "url": "http://speedtest-bog.wom.co:8080/speedtest/upload.php",
@@ -11023,7 +11028,7 @@
         "id": 62632,
         "https_functional": 1,
         "host": "speedtest.movitech.ec:8080",
-        "ipv4": "45.173.229.178",
+        "ipv4": "::ffff:45.173.229.178",
         "asn": "",
         "ipv6": "::ffff:45.173.229.178"
     },
@@ -11053,7 +11058,7 @@
         "id": 53752,
         "https_functional": 1,
         "host": "speed.mifibraisp.com:8080",
-        "ipv4": "170.239.100.226",
+        "ipv4": "::ffff:170.239.100.226",
         "asn": "",
         "ipv6": "::ffff:170.239.100.226"
     },
@@ -12076,9 +12081,9 @@
         "id": 36066,
         "https_functional": 1,
         "host": "speedtest.jrnetfibraoptica.com.br:8080",
-        "ipv4": "45.180.39.2",
+        "ipv4": "45.180.38.0",
         "asn": "",
-        "ipv6": "2804:5fcc:e000::2"
+        "ipv6": "2804:5fcc:3::5"
     },
     {
         "url": "http://velocidade.ondanetfibra.com.br:8080/speedtest/upload.php",
@@ -12448,7 +12453,7 @@
         "id": 28201,
         "https_functional": 1,
         "host": "speedtest.jrconnectfibra.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.182.73.4",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -12698,7 +12703,7 @@
         "id": 22061,
         "https_functional": 1,
         "host": "velocimetro-goi.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "189.63.0.123",
+        "ipv4": "189.63.0.125",
         "asn": ""
     },
     {
@@ -12887,9 +12892,9 @@
         "id": 56036,
         "https_functional": 1,
         "host": "ibstelecom.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.163.88.21",
+        "ipv4": "45.163.88.22",
         "asn": "",
-        "ipv6": "2804:5334:0:1::21"
+        "ipv6": "2804:5334:0:1::22"
     },
     {
         "url": "http://sp01.conectte.com.br:8080/speedtest/upload.php",
@@ -12946,7 +12951,8 @@
         "https_functional": 1,
         "host": "speedtest.ivrnet.com.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "177.85.176.54",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:2fc8:4::32"
     },
     {
         "url": "http://speedtest.linkinternet.inf.br:8080/speedtest/upload.php",
@@ -13767,7 +13773,7 @@
         "id": 22248,
         "https_functional": 1,
         "host": "velocimetro-sls.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "187.180.31.27",
+        "ipv4": "187.180.31.10",
         "asn": ""
     },
     {
@@ -14687,9 +14693,9 @@
         "id": 38415,
         "https_functional": 1,
         "host": "speed.brandaonet.com.br:8080",
-        "ipv4": "45.161.186.107",
+        "ipv4": "191.253.56.7",
         "asn": "",
-        "ipv6": "2804:5258:1d00:2::2"
+        "ipv6": "2804:8ed8:1:7::7"
     },
     {
         "url": "https://speedtest.sapaonet.com.br:8080/speedtest/upload.php",
@@ -14850,7 +14856,7 @@
         "id": 62159,
         "https_functional": 1,
         "host": "speedtest.hashblock.be.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:213.181.110.225",
+        "ipv4": "213.181.110.225",
         "asn": "",
         "ipv6": "::ffff:213.181.110.225"
     },
@@ -16462,7 +16468,7 @@
         "id": 59737,
         "https_functional": 1,
         "host": "speedtest.b3telecom.com.br:8080",
-        "ipv4": "104.21.25.127",
+        "ipv4": "172.67.134.61",
         "asn": "",
         "ipv6": "2606:4700:3034::ac43:863d"
     },
@@ -16816,7 +16822,7 @@
         "host": "redymerida.com.mx:8080",
         "ipv4": "189.51.168.195",
         "asn": "",
-        "ipv6": "2806:3b2:754:5:2206:10ff:fe1a:15f"
+        "ipv6": "2806:3b2:754::2"
     },
     {
         "url": "http://sp01.masnet.mx:8080/speedtest/upload.php",
@@ -17214,7 +17220,7 @@
         "host": "mytest.mayacon.com.mx.prod.hosts.ooklaserver.net:8080",
         "ipv4": "45.174.240.230",
         "asn": "",
-        "ipv6": "2806:338:9:0:d101:2a9d:9854:7287"
+        "ipv6": "2806:338:9:0:8cd3:4650:5cd9:d461"
     },
     {
         "url": "http://speedtest2.redesycomunicacionesiker.com:8080/speedtest/upload.php",
@@ -17227,7 +17233,7 @@
         "id": 62961,
         "https_functional": 1,
         "host": "speedtest2.redesycomunicacionesiker.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.235.255.172",
+        "ipv4": "::ffff:45.235.255.172",
         "asn": "",
         "ipv6": "::ffff:45.235.255.172"
     },
@@ -17564,7 +17570,8 @@
         "https_functional": 1,
         "host": "lg-nyc.fdcservers.net:8080",
         "ipv4": "198.255.20.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d025::4"
     },
     {
         "url": "http://speedtest.w-net.us:8080/speedtest/upload.php",
@@ -19050,9 +19057,9 @@
         "id": 25858,
         "https_functional": 1,
         "host": "speedtest.bmcc.com.cn.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "111.13.111.224",
+        "ipv4": "111.13.111.229",
         "asn": "",
-        "ipv6": "2409:8087:0:45:600::8"
+        "ipv6": "2409:8087:0:45:600::7"
     },
     {
         "url": "http://speedtest3.online.tj.cn:8080/speedtest/upload.php",
@@ -19210,7 +19217,7 @@
         "id": 41382,
         "https_functional": 1,
         "host": "speedtest.djiboutitelecom.dj:8080",
-        "ipv4": "",
+        "ipv4": "197.241.17.10",
         "asn": ""
     },
     {
@@ -19224,7 +19231,7 @@
         "id": 53420,
         "https_functional": 1,
         "host": "speedtest.djibtelecom.dj:8080",
-        "ipv4": "",
+        "ipv4": "196.201.196.45",
         "asn": ""
     },
     {
@@ -19715,7 +19722,7 @@
         "id": 39447,
         "https_functional": 1,
         "host": "mib-rst-sp1.mibroadband.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "139.60.167.70",
         "asn": ""
     },
     {
@@ -19900,7 +19907,7 @@
         "id": 24581,
         "https_functional": 1,
         "host": "lg-minn.fdcservers.net:8080",
-        "ipv4": "23.237.166.122",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -20203,7 +20210,7 @@
         "id": 35845,
         "https_functional": 1,
         "host": "speedtest.halstadtel.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "65.61.65.90",
+        "ipv4": "65.61.64.19",
         "asn": ""
     },
     {
@@ -20382,7 +20389,7 @@
         "host": "speedtest.ciamnet.com.br:8080",
         "ipv4": "179.49.143.4",
         "asn": "",
-        "ipv6": "2804:ec8:19::3"
+        "ipv6": "2804:8fd8::4"
     },
     {
         "url": "https://velocidade.smnet.net.br:8080/speedtest/upload.php",
@@ -20511,7 +20518,7 @@
         "id": 34511,
         "https_functional": 1,
         "host": "sp1.jsmnet.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "187.19.194.206",
+        "ipv4": "177.46.33.64",
         "asn": ""
     },
     {
@@ -22009,9 +22016,8 @@
         "id": 61123,
         "https_functional": 1,
         "host": "velocimetro.superwiffi.com.br:8080",
-        "ipv4": "177.36.77.50",
-        "asn": "",
-        "ipv6": "2804:7808:3801::22"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "https://speedtest.infogamesvr.net.br:8080/speedtest/upload.php",
@@ -22373,7 +22379,7 @@
         "id": 48134,
         "https_functional": 1,
         "host": "ookla.smartserviceslb.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "85.202.92.227",
+        "ipv4": "85.202.92.231",
         "asn": ""
     },
     {
@@ -22947,7 +22953,8 @@
         "https_functional": 1,
         "host": "lg-atl.fdcservers.net:8080",
         "ipv4": "23.237.162.248",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0d1::4"
     },
     {
         "url": "http://speedtest.ftc-i.net:8080/speedtest/upload.php",
@@ -23435,7 +23442,7 @@
         "id": 56423,
         "https_functional": 1,
         "host": "speedtest.acolmetechguerra.com.do.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "38.45.46.127",
+        "ipv4": "38.196.220.255",
         "asn": ""
     },
     {
@@ -23711,8 +23718,9 @@
         "id": 48591,
         "https_functional": 1,
         "host": "speedtest-tesa.coelhotecnologia.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "128.201.210.5",
+        "asn": "",
+        "ipv6": "2804:20fc:2000:10::11"
     },
     {
         "url": "http://78.155.251.131:8080/speedtest/upload.php",
@@ -24806,7 +24814,7 @@
         "id": 45798,
         "https_functional": 1,
         "host": "speedtest.bdnetfibra.com.br:8080",
-        "ipv4": "168.90.65.193",
+        "ipv4": "201.182.73.11",
         "asn": "",
         "ipv6": "2804:2d3c:2:16::2"
     },
@@ -24951,7 +24959,7 @@
         "id": 55321,
         "https_functional": 1,
         "host": "speedtest.radiointerface.ru.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "188.124.36.165",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -26401,8 +26409,9 @@
         "id": 57456,
         "https_functional": 1,
         "host": "speedtest.auratelecom.com.br:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "45.164.187.0",
+        "asn": "",
+        "ipv6": "2804:8ee0:ff:7::2"
     },
     {
         "url": "http://speedtest.webfibertelecom.com.br:8080/speedtest/upload.php",
@@ -27821,7 +27830,7 @@
         "id": 31479,
         "https_functional": 1,
         "host": "speedtest.zippex.com.br:8080",
-        "ipv4": "201.76.51.228",
+        "ipv4": "186.251.204.202",
         "asn": ""
     },
     {
@@ -27850,7 +27859,7 @@
         "id": 22060,
         "https_functional": 1,
         "host": "velocimetro-cba.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "187.123.28.214",
+        "ipv4": "187.123.28.212",
         "asn": ""
     },
     {
@@ -28560,7 +28569,8 @@
         "https_functional": 1,
         "host": "speedaxa.caribcable.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "204.14.248.166",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2002:cc0e:f8a6::cc0e:f8a6"
     },
     {
         "url": "http://speedtest2.cfoc.tech:8080/speedtest/upload.php",
@@ -28617,7 +28627,7 @@
         "id": 61035,
         "https_functional": 1,
         "host": "speedtest.reycom.cr.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "190.61.105.229",
+        "ipv4": "38.196.150.29",
         "asn": "",
         "ipv6": "2803:c50:1:101:20c:29ff:fe6c:c085"
     },
@@ -28747,8 +28757,9 @@
         "id": 11396,
         "https_functional": 1,
         "host": "speedtest.cvinternet.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "209.161.168.8",
-        "asn": ""
+        "ipv4": "209.71.52.54",
+        "asn": "",
+        "ipv6": "2604:440:302:3::6"
     },
     {
         "url": "http://speedtest.talk-straight.com:8080/speedtest/upload.php",
@@ -28891,9 +28902,9 @@
         "id": 60668,
         "https_functional": 1,
         "host": "speed.srv.rent.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.142.113.143",
+        "ipv4": "77.90.56.2",
         "asn": "",
-        "ipv6": "2a12:3e80:402:1330:6ca1:c2ba:1540:abcd"
+        "ipv6": "2a12:de40:46:1330:6ca1:c2ba:1540:abcd"
     },
     {
         "url": "http://speed.toolsoft.com.br:8080/speedtest/upload.php",
@@ -29336,8 +29347,9 @@
         "id": 36944,
         "https_functional": 1,
         "host": "speedtest.maracaibonet.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.187.92.98",
-        "asn": ""
+        "ipv4": "45.187.92.105",
+        "asn": "",
+        "ipv6": "2803:7760:0:f0c0::bb"
     },
     {
         "url": "http://speedtest.icarosoft.com:8080/speedtest/upload.php",
@@ -29478,7 +29490,8 @@
         "https_functional": 1,
         "host": "speedchichiriviche.somosthunder.net.prod.hosts.ooklaserver.net:6900",
         "ipv4": "190.97.237.14",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2803:3890:aff:ff00::2"
     },
     {
         "url": "http://speedtest3.fonet.com.ve:8080/speedtest/upload.php",
@@ -29505,8 +29518,9 @@
         "id": 52503,
         "https_functional": 1,
         "host": "speedtucacas.somosthunder.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "186.166.142.197",
-        "asn": ""
+        "ipv4": "206.85.166.4",
+        "asn": "",
+        "ipv6": "2803:3890:7ff:ff00::2"
     },
     {
         "url": "http://speedtest.mservica.com:8080/speedtest/upload.php",
@@ -29534,7 +29548,7 @@
         "id": 61648,
         "https_functional": 1,
         "host": "speedtest2.interancha.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "205.209.113.202",
+        "ipv4": "190.97.234.204",
         "asn": ""
     },
     {
@@ -29548,8 +29562,9 @@
         "id": 52505,
         "https_functional": 1,
         "host": "speedsanfelipe.somosthunder.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "186.166.142.179",
-        "asn": ""
+        "ipv4": "38.83.92.4",
+        "asn": "",
+        "ipv6": "2803:3890:9ff:ff00::2"
     },
     {
         "url": "http://speedtest-sf.boomsolutionsve.com:8080/speedtest/upload.php",
@@ -29649,7 +29664,7 @@
         "id": 58547,
         "https_functional": 1,
         "host": "speedtest.airlinkve.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "199.59.243.226",
+        "ipv4": "72.52.178.23",
         "asn": ""
     },
     {
@@ -29763,7 +29778,7 @@
         "id": 57836,
         "https_functional": 1,
         "host": "speed.pnsinternet.com:8080",
-        "ipv4": "::ffff:45.184.103.94",
+        "ipv4": "45.184.103.94",
         "asn": "",
         "ipv6": "::ffff:45.184.103.94"
     },
@@ -30225,7 +30240,8 @@
         "https_functional": 1,
         "host": "testacarigua.somosthunder.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "186.166.141.189",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2803:3890:4ff:ff00::2"
     },
     {
         "url": "https://speedtest.acg.inter.com.ve:8080/speedtest/upload.php",
@@ -30930,9 +30946,8 @@
         "id": 59946,
         "https_functional": 1,
         "host": "speedtest-iss.bbg.psi.br:8080",
-        "ipv4": "168.90.226.216",
-        "asn": "",
-        "ipv6": "2804:1638:f6dd::beba:ccc3"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest-sdm.bbg.psi.br:8080/speedtest/upload.php",
@@ -31371,7 +31386,8 @@
         "https_functional": 1,
         "host": "speedtest01.ing.net.br:8080",
         "ipv4": "45.180.132.46",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:5ff0:2::5"
     },
     {
         "url": "http://speedtest02.ing.net.br:8080/speedtest/upload.php",
@@ -31682,7 +31698,7 @@
         "id": 43643,
         "https_functional": 1,
         "host": "speedtest.neitel.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "207.199.254.161",
+        "ipv4": "209.152.95.93",
         "asn": ""
     },
     {
@@ -31966,8 +31982,7 @@
         "https_functional": 1,
         "host": "speedtest2.nckcn.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "205.161.24.6",
-        "asn": "",
-        "ipv6": "2605:dc40:0:23::2"
+        "asn": ""
     },
     {
         "url": "http://speedtest.gtmc.net:8080/speedtest/upload.php",
@@ -32354,9 +32369,9 @@
         "id": 17714,
         "https_functional": 1,
         "host": "sp1.jdmbroadband.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.208.153.202",
+        "ipv4": "202.160.133.229",
         "asn": "",
-        "ipv6": "2406:d540::2"
+        "ipv6": "2406:d540::702"
     },
     {
         "url": "http://speedtest.dwipl.com:8080/speedtest/upload.php",
@@ -32601,7 +32616,7 @@
         "id": 49506,
         "https_functional": 1,
         "host": "speedtest.jkmtpl.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:103.195.36.10",
+        "ipv4": "103.195.36.10",
         "asn": "",
         "ipv6": "::ffff:103.195.36.10"
     },
@@ -33302,7 +33317,7 @@
         "id": 12932,
         "https_functional": 1,
         "host": "speedtest.feenix.co.nz.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "103.208.140.59",
         "asn": ""
     },
     {
@@ -33519,7 +33534,7 @@
         "id": 50747,
         "https_functional": 1,
         "host": "speedtest.klickersknight.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "119.92.140.13",
+        "ipv4": "::ffff:119.92.140.13",
         "asn": "",
         "ipv6": "::ffff:119.92.140.13"
     },
@@ -33781,9 +33796,8 @@
         "id": 55599,
         "https_functional": 1,
         "host": "speedtest.knserv.de.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "88.216.220.27",
-        "asn": "",
-        "ipv6": "2a0e:97c0::21"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://sp1.mediateknik.net:8080/speedtest/upload.php",
@@ -34220,8 +34234,9 @@
         "id": 57449,
         "https_functional": 1,
         "host": "speedtest.teknetsp.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "72.44.21.30",
+        "asn": "",
+        "ipv6": "2804:8aac:300:0:172:30:0:8"
     },
     {
         "url": "http://ooklaspeedtest.pknettelecom.com.br:8080/speedtest/upload.php",
@@ -34491,7 +34506,7 @@
         "id": 61510,
         "https_functional": 1,
         "host": "safaknet-1.speedtest.gibir.net.tr.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "149.86.142.92",
+        "ipv4": "149.86.140.3",
         "asn": ""
     },
     {
@@ -34678,8 +34693,7 @@
         "https_functional": 1,
         "host": "lko.speedtest.railtel.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "122.252.232.158",
-        "asn": "",
-        "ipv6": "2401:b200:11::92"
+        "asn": ""
     },
     {
         "url": "http://splkh1.renubroadband.com:8080/speedtest/upload.php",
@@ -35243,7 +35257,7 @@
         "id": 3689,
         "https_functional": 1,
         "host": "speedtest.lannet.org.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "91.229.87.140",
+        "ipv4": "91.229.87.145",
         "asn": ""
     },
     {
@@ -35723,8 +35737,7 @@
         "https_functional": 1,
         "host": "sp.indinet.co.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "202.142.112.226",
-        "asn": "",
-        "ipv6": "2406:3c80::9"
+        "asn": ""
     },
     {
         "url": "http://speedtest.speednetkolkata.com:8080/speedtest/upload.php",
@@ -36043,9 +36056,8 @@
         "id": 14992,
         "https_functional": 1,
         "host": "speedtest.click1.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "135.84.88.141",
-        "asn": "",
-        "ipv6": "2604:5740:0:96:216:3eff:feec:a230"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://Speedtest.prentissconnect.com:8080/speedtest/upload.php",
@@ -36230,7 +36242,7 @@
         "id": 4244,
         "https_functional": 1,
         "host": "speedtest.wp.shawcable.net:8080",
-        "ipv4": "24.244.63.18",
+        "ipv4": "24.244.63.22",
         "asn": ""
     },
     {
@@ -36489,7 +36501,7 @@
         "host": "guala.megaconnection.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "45.224.97.134",
         "asn": "",
-        "ipv6": "2803:2540:c1:8000::3"
+        "ipv6": "2803:2540:c1::2"
     },
     {
         "url": "http://guyane3.speedtest.orange.fr:8080/speedtest/upload.php",
@@ -36576,9 +36588,9 @@
         "id": 52968,
         "https_functional": 1,
         "host": "speedtest.ipsectelecom.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "186.211.162.81",
+        "ipv4": "186.216.30.13",
         "asn": "",
-        "ipv6": "2804:a:400f:f806::2"
+        "ipv6": "2804:164:e500::11"
     },
     {
         "url": "http://gateway2.yo6rzv.ro:8080/speedtest/upload.php",
@@ -37454,7 +37466,7 @@
         "id": 62289,
         "https_functional": 1,
         "host": "speed.comtigotv.net:8080",
-        "ipv4": "45.224.23.205",
+        "ipv4": "::ffff:45.224.23.205",
         "asn": "",
         "ipv6": "::ffff:45.224.23.205"
     },
@@ -37658,9 +37670,8 @@
         "id": 51708,
         "https_functional": 1,
         "host": "speed.itbyhf.xyz:8080",
-        "ipv4": "45.133.75.1",
-        "asn": "",
-        "ipv6": "2a0e:97c0:ce0::2"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://dus.wsqm.telekom-dienste.de:8080/speedtest/upload.php",
@@ -37822,7 +37833,7 @@
         "host": "speedtest.profissionalinformatica.com.br:8080",
         "ipv4": "201.91.72.68",
         "asn": "",
-        "ipv6": "2804:21a0:7e:6500::2"
+        "ipv6": "2804:21a0:5f:2d01::3"
     },
     {
         "url": "http://speedtest1.t-m-net.de:8080/speedtest/upload.php",
@@ -41421,7 +41432,7 @@
         "id": 56906,
         "https_functional": 1,
         "host": "gla-speedtest.axisstudiosgroup.com:8080",
-        "ipv4": "::ffff:62.6.251.206",
+        "ipv4": "62.6.251.206",
         "asn": "",
         "ipv6": "::ffff:62.6.251.206"
     },
@@ -41450,7 +41461,7 @@
         "id": 57421,
         "https_functional": 1,
         "host": "brs-speedtest.axisstudiosgroup.com:8080",
-        "ipv4": "::ffff:213.106.163.188",
+        "ipv4": "213.106.163.188",
         "asn": "",
         "ipv6": "::ffff:213.106.163.188"
     },
@@ -42411,7 +42422,7 @@
         "id": 59605,
         "https_functional": 1,
         "host": "speedtest.teleing.org.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "200.24.135.134",
+        "ipv4": "13.248.213.45",
         "asn": "",
         "ipv6": "2803:2540:57:8000::3"
     },
@@ -42456,7 +42467,7 @@
         "id": 38697,
         "https_functional": 1,
         "host": "speedtest.airwiz.com.pe.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:200.39.152.18",
+        "ipv4": "200.39.152.18",
         "asn": "",
         "ipv6": "::ffff:200.39.152.18"
     },
@@ -43125,7 +43136,7 @@
         "id": 28958,
         "https_functional": 1,
         "host": "speedtest2.ltc.net.ly.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "195.234.120.194",
         "asn": ""
     },
     {
@@ -43344,9 +43355,9 @@
         "id": 26564,
         "https_functional": 1,
         "host": "speedtest.ffcomunicacoes.net.br:8080",
-        "ipv4": "45.187.55.253",
+        "ipv4": "45.187.55.243",
         "asn": "",
-        "ipv6": "2804:64e4:face:dd1::2"
+        "ipv6": "2804:64e4:901:d243::243"
     },
     {
         "url": "http://globaltelecomunicacoes.net.br:8080/speedtest/upload.php",
@@ -43361,7 +43372,7 @@
         "host": "globaltelecomunicacoes.net.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "170.81.102.41",
         "asn": "",
-        "ipv6": "2804:890:303:1000::2"
+        "ipv6": "2804:890:303:1000::3"
     },
     {
         "url": "https://medidor.virtualrevolutionfibra.com.br:8080/speedtest/upload.php",
@@ -43506,8 +43517,9 @@
         "id": 26949,
         "https_functional": 1,
         "host": "velocidade.routeway.com.br:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "177.93.80.36",
+        "asn": "",
+        "ipv6": "2804:1760:100:36::8036"
     },
     {
         "url": "http://speedtest6.ipi.net.br:8080/speedtest/upload.php",
@@ -45092,7 +45104,7 @@
         "id": 62774,
         "https_functional": 1,
         "host": "speedtest.telecomitalia.sm:8080",
-        "ipv4": "194.183.67.41",
+        "ipv4": "194.183.67.42",
         "asn": ""
     },
     {
@@ -46076,9 +46088,9 @@
         "id": 52727,
         "https_functional": 1,
         "host": "speedtest.cableexito.com.co.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "190.60.32.43",
+        "ipv4": "38.196.178.17",
         "asn": "",
-        "ipv6": "2803:bc40:a000:3e9:20c:29ff:fee7:1fdb"
+        "ipv6": "2803:4150:0:382:20c:29ff:fee7:1fdb"
     },
     {
         "url": "http://speedtest.mymnet.co:8080/speedtest/upload.php",
@@ -46150,7 +46162,7 @@
         "id": 59873,
         "https_functional": 1,
         "host": "speedtest.gigared.pe.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "200.48.38.75",
+        "ipv4": "::ffff:200.48.38.75",
         "asn": "",
         "ipv6": "::ffff:200.48.38.75"
     },
@@ -46324,8 +46336,7 @@
         "https_functional": 1,
         "host": "speedtest.fibrastarperu.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "168.194.168.1",
-        "asn": "",
-        "ipv6": "2803:be0:9994:1::2"
+        "asn": ""
     },
     {
         "url": "http://speedtest.nextfibra.com:8080/speedtest/upload.php",
@@ -47263,7 +47274,8 @@
         "https_functional": 1,
         "host": "speedtest.bfiber.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.165.23.182",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:df6:f280:1000::2"
     },
     {
         "url": "http://speedtestdalsinghsarai.bfiber.in:8080/speedtest/upload.php",
@@ -49051,7 +49063,7 @@
         "id": 62337,
         "https_functional": 1,
         "host": "ltrkar02-dc05.diamondstatenetworks.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "66.33.31.1",
+        "ipv4": "66.33.31.3",
         "asn": "",
         "ipv6": "2606:d240:0:1::a01"
     },
@@ -49335,7 +49347,7 @@
         "id": 59694,
         "https_functional": 1,
         "host": "speed.posadamarin.com:8080",
-        "ipv4": "::ffff:187.157.34.22",
+        "ipv4": "187.157.34.22",
         "asn": "",
         "ipv6": "::ffff:187.157.34.22"
     },
@@ -49798,8 +49810,7 @@
         "https_functional": 1,
         "host": "speedtest-riyadhnew.sa.zain.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "79.170.51.55",
-        "asn": "",
-        "ipv6": "2a02:cb81:1003::42"
+        "asn": ""
     },
     {
         "url": "http://ryd.myspeed.net.sa:8080/speedtest/upload.php",
@@ -50001,7 +50012,7 @@
         "host": "speedtestlud1.airtelbroadband.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "182.66.121.38",
         "asn": "",
-        "ipv6": "2404:a800:1a00:805::b3"
+        "ipv6": "2404:a800:1a00:805::b0"
     },
     {
         "url": "http://ld1.vayutel.net:8080/speedtest/upload.php",
@@ -50592,7 +50603,7 @@
         "id": 61572,
         "https_functional": 1,
         "host": "pgs-dgb-spd-222.pegasuswave.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "103.155.54.222",
         "asn": ""
     },
     {
@@ -50681,7 +50692,7 @@
         "host": "speedtest.srirambroadband.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.99.185.202",
         "asn": "",
-        "ipv6": "2001:df1:72c0:c002::2"
+        "ipv6": "2001:df1:72c0:102::2"
     },
     {
         "url": "http://speedtest.dhlbroadbandnet.com:8080/speedtest/upload.php",
@@ -50751,8 +50762,9 @@
         "id": 53762,
         "https_functional": 1,
         "host": "sp01.hgplay.mx.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "186.26.74.1",
+        "asn": "",
+        "ipv6": "2001:470:1f0f:6bc::2"
     },
     {
         "url": "https://speedtest.extremanetwork.com.br:8080/speedtest/upload.php",
@@ -51017,7 +51029,7 @@
         "id": 62156,
         "https_functional": 1,
         "host": "erothnetlinksolutions.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.109.221.50",
+        "ipv4": "::ffff:103.109.221.50",
         "asn": "",
         "ipv6": "::ffff:103.109.221.50"
     },
@@ -51455,7 +51467,7 @@
         "host": "wirelinespeedtestgoosebay.srvr.bell.ca.prod.hosts.ooklaserver.net:8080",
         "ipv4": "142.163.100.130",
         "asn": "",
-        "ipv6": "2001:4958:300:410::15"
+        "ipv6": "2001:4c0:1:7305:0:1000:0:2"
     },
     {
         "url": "http://speedtest-mamey.rodritel.com:8080/speedtest/upload.php",
@@ -51612,7 +51624,7 @@
         "id": 41890,
         "https_functional": 1,
         "host": "speedtest.xtercom.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "38.52.178.255",
         "asn": ""
     },
     {
@@ -51898,7 +51910,7 @@
         "host": "tunja.tvn.red.prod.hosts.ooklaserver.net:8080",
         "ipv4": "179.1.207.33",
         "asn": "",
-        "ipv6": "2803:3190:d000:d000:d000:d000:d000:d000"
+        "ipv6": "2803:d350:0:1::2"
     },
     {
         "url": "https://speedtest.espinettv.com:8080/speedtest/upload.php",
@@ -51973,7 +51985,7 @@
         "host": "speedtest.conectjadns.com.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "200.215.252.71",
         "asn": "",
-        "ipv6": "2804:6eb8:1::7"
+        "ipv6": "2804:6eb8:1::a"
     },
     {
         "url": "http://speedtest.redebjnet.com.br:8080/speedtest/upload.php",
@@ -53100,7 +53112,7 @@
         "id": 57679,
         "https_functional": 1,
         "host": "speedskyline.yapagos.com:8080",
-        "ipv4": "::ffff:177.234.222.13",
+        "ipv4": "177.234.222.13",
         "asn": "",
         "ipv6": "::ffff:177.234.222.13"
     },
@@ -55355,7 +55367,7 @@
         "id": 62116,
         "https_functional": 1,
         "host": "ookla.sct.eu.smoketunnel.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "188.240.58.118",
+        "ipv4": "188.240.58.115",
         "asn": ""
     },
     {
@@ -55398,7 +55410,7 @@
         "id": 62142,
         "https_functional": 1,
         "host": "ookla.uk.eu.bvpn.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "51.89.183.20",
+        "ipv4": "51.89.183.18",
         "asn": ""
     },
     {
@@ -55545,7 +55557,7 @@
         "id": 62136,
         "https_functional": 1,
         "host": "ookla.de.eu.waselpro.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "134.119.206.203",
+        "ipv4": "134.119.206.206",
         "asn": ""
     },
     {
@@ -55604,7 +55616,7 @@
         "id": 59110,
         "https_functional": 1,
         "host": "ookla.finland.bvpn.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "185.212.149.183",
+        "ipv4": "185.212.149.186",
         "asn": ""
     },
     {
@@ -56437,7 +56449,8 @@
         "https_functional": 1,
         "host": "speedtest.mitsupp.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "64.93.68.10",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2606:2ac0:8002:1::100"
     },
     {
         "url": "http://speedtest.wwfn.ca:8080/speedtest/upload.php",
@@ -56872,7 +56885,7 @@
         "id": 35396,
         "https_functional": 1,
         "host": "speedtest.cmdcable.com:8080",
-        "ipv4": "",
+        "ipv4": "103.149.100.12",
         "asn": ""
     },
     {
@@ -57090,7 +57103,7 @@
         "id": 49655,
         "https_functional": 1,
         "host": "speedtest.mambulaocabletv.com:8080",
-        "ipv4": "",
+        "ipv4": "103.170.18.11",
         "asn": ""
     },
     {
@@ -57471,7 +57484,7 @@
         "id": 57881,
         "https_functional": 1,
         "host": "speed.somostvinternet.com:8080",
-        "ipv4": "::ffff:38.199.68.254",
+        "ipv4": "38.199.68.254",
         "asn": "",
         "ipv6": "::ffff:38.199.68.254"
     },
@@ -58605,7 +58618,7 @@
         "id": 4207,
         "https_functional": 1,
         "host": "speedtest.cg.shawcable.net:8080",
-        "ipv4": "24.244.63.14",
+        "ipv4": "24.244.63.10",
         "asn": ""
     },
     {
@@ -58619,7 +58632,7 @@
         "id": 4242,
         "https_functional": 1,
         "host": "speedtest.ed.shawcable.net:8080",
-        "ipv4": "24.244.63.26",
+        "ipv4": "24.244.63.30",
         "asn": ""
     },
     {
@@ -58690,7 +58703,7 @@
         "id": 4243,
         "https_functional": 1,
         "host": "speedtest.vc.shawcable.net:8080",
-        "ipv4": "24.244.63.46",
+        "ipv4": "24.244.63.42",
         "asn": ""
     },
     {
@@ -58923,9 +58936,8 @@
         "id": 56266,
         "https_functional": 1,
         "host": "speedtest.tiwisp.net.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "168.196.40.46",
-        "asn": "",
-        "ipv6": "2804:3434:c022::2"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest.stalelacze.pl:8080/speedtest/upload.php",
@@ -59070,8 +59082,9 @@
         "id": 43958,
         "https_functional": 1,
         "host": "speedtest.wwnet.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "168.197.176.8",
+        "asn": "",
+        "ipv6": "2804:34ec:810:1:c0de:c0de:c0de:c0de"
     },
     {
         "url": "https://speedtest.newconnect.net.br:8080/speedtest/upload.php",
@@ -59084,9 +59097,8 @@
         "id": 49613,
         "https_functional": 1,
         "host": "speedtest.newconnect.net.br:8080",
-        "ipv4": "38.51.124.26",
-        "asn": "",
-        "ipv6": "2804:8510:1::a"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "https://teste.jevw.com.br:8080/speedtest/upload.php",
@@ -59114,8 +59126,7 @@
         "https_functional": 1,
         "host": "speedtest.bayfieldwireless.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "136.175.36.53",
-        "asn": "",
-        "ipv6": "2604:f9c0:2:0:ee72:560b:38ed:2dcd"
+        "asn": ""
     },
     {
         "url": "http://speedtest.bcn.byfi.tech:8080/speedtest/upload.php",
@@ -59482,9 +59493,8 @@
         "id": 14497,
         "https_functional": 1,
         "host": "a.speedtest.uzzy.com.br:8080",
-        "ipv4": "131.161.32.42",
-        "asn": "",
-        "ipv6": "2804:1dcc:1::42"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://wfprovedor-ro.com.br:8080/speedtest/upload.php",
@@ -60133,9 +60143,9 @@
         "id": 32312,
         "https_functional": 1,
         "host": "speedtest-lhr1.jazz.com.pk.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "119.30.107.222",
+        "ipv4": "119.160.92.110",
         "asn": "",
-        "ipv6": "2404:3100:b::d"
+        "ipv6": "2404:3100:20:d100::21"
     },
     {
         "url": "http://speedtest-khi1.jazz.com.pk:8080/speedtest/upload.php",
@@ -60772,7 +60782,7 @@
         "host": "speedtest.wnet-technology.sk.prod.hosts.ooklaserver.net:8080",
         "ipv4": "104.21.57.48",
         "asn": "",
-        "ipv6": "2606:4700:3032::6815:3930"
+        "ipv6": "2606:4700:3035::ac43:8df3"
     },
     {
         "url": "http://ookla.koba.pl:8080/speedtest/upload.php",
@@ -61203,7 +61213,8 @@
         "https_functional": 1,
         "host": "lg-hou.fdcservers.net:8080",
         "ipv4": "23.237.164.248",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0d2::4"
     },
     {
         "url": "https://lg-mia.fdcservers.net:8080/speedtest/upload.php",
@@ -61217,7 +61228,8 @@
         "https_functional": 1,
         "host": "lg-mia.fdcservers.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "50.7.64.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d004::4"
     },
     {
         "url": "http://lg-dene.fdcservers.net:8080/speedtest/upload.php",
@@ -61231,7 +61243,8 @@
         "https_functional": 1,
         "host": "lg-dene.fdcservers.net:8080",
         "ipv4": "198.255.8.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d01d::4"
     },
     {
         "url": "http://speedtest.lv.net:8080/speedtest/upload.php",
@@ -61273,7 +61286,8 @@
         "https_functional": 1,
         "host": "lg-lax.fdcservers.net:8080",
         "ipv4": "192.240.120.250",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0b4::4"
     },
     {
         "url": "http://ca.na.speedtest.i3d.net:8080/speedtest/upload.php",
@@ -61392,7 +61406,8 @@
         "https_functional": 1,
         "host": "lg-lim.fdcservers.net:8080",
         "ipv4": "200.25.29.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2800:1e0:1041::4"
     },
     {
         "url": "http://speedtest.gruporedes.net:8080/speedtest/upload.php",
@@ -61420,7 +61435,8 @@
         "https_functional": 1,
         "host": "lg-lis.fdcservers.net:8080",
         "ipv4": "50.7.43.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0ed::4"
     },
     {
         "url": "https://lg-lon.fdcservers.net:8080/speedtest/upload.php",
@@ -61434,7 +61450,8 @@
         "https_functional": 1,
         "host": "lg-lon.fdcservers.net:8080",
         "ipv4": "50.7.152.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d007::4"
     },
     {
         "url": "http://lg-lon.aeza.net:8080/speedtest/upload.php",
@@ -61447,7 +61464,7 @@
         "id": 62945,
         "https_functional": 1,
         "host": "lg-lon.aeza.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "46.226.162.92",
+        "ipv4": "",
         "asn": "",
         "ipv6": "2a0b:4140:1032::2"
     },
@@ -61492,7 +61509,8 @@
         "https_functional": 1,
         "host": "lg-ams.fdcservers.net:8080",
         "ipv4": "50.7.126.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d023::4"
     },
     {
         "url": "http://speedtest.ams.wd6.net:8080/speedtest/upload.php",
@@ -61608,7 +61626,8 @@
         "https_functional": 1,
         "host": "lg-fort.fdcservers.net:8080",
         "ipv4": "50.7.3.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0f3::4"
     },
     {
         "url": "http://speedtest.twerion.net:8080/speedtest/upload.php",
@@ -61802,7 +61821,8 @@
         "https_functional": 1,
         "host": "lg-pra.fdcservers.net:8080",
         "ipv4": "66.90.111.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d10d::4"
     },
     {
         "url": "http://teste1.fnetpe.com.br:8080/speedtest/upload.php",
@@ -61903,7 +61923,8 @@
         "https_functional": 1,
         "host": "lg-vie.fdcservers.net:8080",
         "ipv4": "50.7.37.26",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0e8::4"
     },
     {
         "url": "http://jnetfibra.brsserver.com.br:8080/speedtest/upload.php",
@@ -63685,7 +63706,7 @@
         "id": 62879,
         "https_functional": 1,
         "host": "speedconecar.coitnet.com:8080",
-        "ipv4": "45.5.8.189",
+        "ipv4": "::ffff:45.5.8.189",
         "asn": "",
         "ipv6": "::ffff:45.5.8.189"
     },
@@ -63700,7 +63721,7 @@
         "id": 62902,
         "https_functional": 1,
         "host": "speed.conectividadeldcaribe.com:8080",
-        "ipv4": "45.5.8.196",
+        "ipv4": "::ffff:45.5.8.196",
         "asn": "",
         "ipv6": "::ffff:45.5.8.196"
     },
@@ -64590,7 +64611,7 @@
         "id": 61345,
         "https_functional": 1,
         "host": "speedtest.hostida.com:8080",
-        "ipv4": "",
+        "ipv4": "91.220.113.26",
         "asn": ""
     },
     {
@@ -64871,7 +64892,7 @@
         "id": 52859,
         "https_functional": 1,
         "host": "ca.shivanshinfotech.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.248.123.222",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -64885,7 +64906,7 @@
         "id": 25859,
         "https_functional": 1,
         "host": "speedtest.igennetworks.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.211.76.132",
+        "ipv4": "103.211.76.3",
         "asn": "",
         "ipv6": "2407:4cc0::4"
     },
@@ -65654,7 +65675,7 @@
         "id": 49787,
         "https_functional": 1,
         "host": "speedtest.bcgtgroup.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "190.99.116.115",
+        "ipv4": "190.99.117.229",
         "asn": "",
         "ipv6": "2803:5100:100::2"
     },
@@ -65741,7 +65762,7 @@
         "id": 61142,
         "https_functional": 1,
         "host": "blg.fibranetplus.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "38.51.234.66",
+        "ipv4": "38.224.42.2",
         "asn": "",
         "ipv6": "2803:f450:80:8101:b696:91ff:fe11:cc82"
     },
@@ -65932,7 +65953,7 @@
         "id": 47172,
         "https_functional": 1,
         "host": "teste.nettcon.com.br:8080",
-        "ipv4": "138.94.239.135",
+        "ipv4": "138.94.236.163",
         "asn": ""
     },
     {
@@ -66224,8 +66245,7 @@
         "https_functional": 1,
         "host": "speedtestmoubb.meghbelabroadband.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.93.100.138",
-        "asn": "",
-        "ipv6": "2403:8500:100:8::6"
+        "asn": ""
     },
     {
         "url": "http://speedtestbwn.meghbelabroadband.in:8080/speedtest/upload.php",
@@ -67812,7 +67832,7 @@
         "id": 57367,
         "https_functional": 1,
         "host": "serviciospablomella2.com.do.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "38.156.235.51",
+        "ipv4": "38.156.238.82",
         "asn": ""
     },
     {
@@ -67826,7 +67846,7 @@
         "id": 57784,
         "https_functional": 1,
         "host": "speedtest.persil.com.do.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "38.156.236.62",
+        "ipv4": "38.188.165.124",
         "asn": ""
     },
     {
@@ -68892,7 +68912,7 @@
         "id": 35958,
         "https_functional": 1,
         "host": "speedtest.meganetriospeedtest.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.234.208.10",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -70842,7 +70862,7 @@
         "id": 63035,
         "https_functional": 1,
         "host": "speedtest5.datalink.com.ve.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "170.81.144.26",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -70858,7 +70878,7 @@
         "host": "wisper.com.co.prod.hosts.ooklaserver.net:8080",
         "ipv4": "179.1.110.154",
         "asn": "",
-        "ipv6": "2800:310:a01::3"
+        "ipv6": "2803:e350:f000:3::d3de"
     },
     {
         "url": "http://speedtest.ateneatelecomunicaciones.vip:8080/speedtest/upload.php",
@@ -70976,7 +70996,7 @@
         "id": 49323,
         "https_functional": 1,
         "host": "speedtest.compunetwork.pe.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "200.215.251.253",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -72529,7 +72549,7 @@
         "id": 18894,
         "https_functional": 1,
         "host": "speedtest.mundopacifico.cl:8080",
-        "ipv4": "170.150.159.34",
+        "ipv4": "170.150.159.36",
         "asn": ""
     },
     {
@@ -73092,7 +73112,7 @@
         "id": 54702,
         "https_functional": 1,
         "host": "spt.mynetisp-kcn.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.150.58.50",
+        "ipv4": "::ffff:103.150.58.50",
         "asn": "",
         "ipv6": "::ffff:103.150.58.50"
     },
@@ -73180,8 +73200,9 @@
         "id": 31650,
         "https_functional": 1,
         "host": "5bbbroadbandmdy.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "103.231.95.134",
+        "asn": "",
+        "ipv6": "2407:6ec0::7"
     },
     {
         "url": "http://speedtest.mowcn.com:8080/speedtest/upload.php",
@@ -73252,7 +73273,7 @@
         "id": 61233,
         "https_functional": 1,
         "host": "speedtest.chenguangnetwork.com:8080",
-        "ipv4": "103.110.183.42",
+        "ipv4": "15.197.240.20",
         "asn": ""
     },
     {
@@ -73297,7 +73318,7 @@
         "host": "gghnet.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.156.154.82",
         "asn": "",
-        "ipv6": "2407:d3c0::2"
+        "ipv6": "2407:d3c0:f000:110:103:156:154:82"
     },
     {
         "url": "http://sptest.smktelecom.com:8080/speedtest/upload.php",
@@ -74669,7 +74690,8 @@
         "https_functional": 1,
         "host": "speedtest.fxinfotelecom.com.br:8080",
         "ipv4": "45.173.77.126",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:8444:2::2"
     },
     {
         "url": "http://speedtest.lx7.com.br:8080/speedtest/upload.php",
@@ -75031,7 +75053,7 @@
         "id": 59399,
         "https_functional": 1,
         "host": "speedtest.conectel.pe:8080",
-        "ipv4": "191.97.54.49",
+        "ipv4": "::ffff:191.97.54.49",
         "asn": "",
         "ipv6": "::ffff:191.97.54.49"
     },
@@ -75046,7 +75068,7 @@
         "id": 62245,
         "https_functional": 1,
         "host": "speedtest.mifibrapiura.pe:8080",
-        "ipv4": "38.56.216.246",
+        "ipv4": "::ffff:38.56.216.246",
         "asn": "",
         "ipv6": "::ffff:38.56.216.246"
     },
@@ -75930,8 +75952,9 @@
         "id": 61865,
         "https_functional": 1,
         "host": "speedtest.dmsac.pe.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "190.108.95.31",
+        "asn": "",
+        "ipv6": "2800:650:10a:83e8::2"
     },
     {
         "url": "http://ookla-itacoatiara.amazoniasat-isp.com.br:8080/speedtest/upload.php",
@@ -76544,7 +76567,7 @@
         "id": 22406,
         "https_functional": 1,
         "host": "velocimetro-bhz.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "201.17.170.59",
+        "ipv4": "201.17.170.51",
         "asn": ""
     },
     {
@@ -76587,9 +76610,9 @@
         "id": 56583,
         "https_functional": 1,
         "host": "teste.liberttelecom.com.br:8080",
-        "ipv4": "206.85.22.13",
+        "ipv4": "131.161.107.206",
         "asn": "",
-        "ipv6": "2804:8420:0:f::13"
+        "ipv6": "2804:8420:c000:100::5"
     },
     {
         "url": "https://speedtest.link.psi.br:8080/speedtest/upload.php",
@@ -77222,7 +77245,8 @@
         "https_functional": 1,
         "host": "speedtest.i9net.net.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "170.79.140.18",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:35d0:ffff:ffff:ffff:ffff:ffff:ffef"
     },
     {
         "url": "http://teste.nossanet.net:8080/speedtest/upload.php",
@@ -77340,7 +77364,7 @@
         "id": 53024,
         "https_functional": 1,
         "host": "speedtest.thedoctorinfo.com.br:8080",
-        "ipv4": "189.39.186.64",
+        "ipv4": "189.39.186.1",
         "asn": "",
         "ipv6": "2804:88b8::2"
     },
@@ -77484,7 +77508,7 @@
         "id": 62069,
         "https_functional": 1,
         "host": "speedtest.cvmcablevisionmajes.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "38.137.192.250",
+        "ipv4": "200.48.64.105",
         "asn": ""
     },
     {
@@ -77689,8 +77713,7 @@
         "https_functional": 1,
         "host": "sp1.spacenetse.com.br:8080",
         "ipv4": "45.233.96.22",
-        "asn": "",
-        "ipv6": "2804:4b70::1:e"
+        "asn": ""
     },
     {
         "url": "http://spe1.serginetbandalarga.com.br:8080/speedtest/upload.php",
@@ -77912,7 +77935,7 @@
         "host": "speedtest.redespaceinfo.com.br:8080",
         "ipv4": "181.224.60.58",
         "asn": "",
-        "ipv6": "2804:7b00:bcd::2"
+        "ipv6": "2804:7b00:1:2::2"
     },
     {
         "url": "http://teste.starnetsaj.net.br:8080/speedtest/upload.php",
@@ -78057,7 +78080,7 @@
         "id": 55762,
         "https_functional": 1,
         "host": "webnet.brsserver.com.br:8080",
-        "ipv4": "45.165.236.94",
+        "ipv4": "189.84.79.95",
         "asn": ""
     },
     {
@@ -78303,9 +78326,9 @@
         "id": 55130,
         "https_functional": 1,
         "host": "speedtestgoa.bigventuresmedia.com:8080",
-        "ipv4": "103.173.136.89",
+        "ipv4": "103.173.136.17",
         "asn": "",
-        "ipv6": "2001:df7:9e80::3e"
+        "ipv6": "2001:df7:9e80::e"
     },
     {
         "url": "https://speedtest02.bigventuresmedia.com:8080/speedtest/upload.php",
@@ -78318,9 +78341,9 @@
         "id": 45481,
         "https_functional": 1,
         "host": "speedtest02.bigventuresmedia.com:8080",
-        "ipv4": "103.173.136.117",
+        "ipv4": "103.173.136.37",
         "asn": "",
-        "ipv6": "2001:df7:9e80::6"
+        "ipv6": "2001:df7:9e80::106"
     },
     {
         "url": "https://speedtestgoa02.bigventuresmedia.com:8080/speedtest/upload.php",
@@ -78333,9 +78356,9 @@
         "id": 55962,
         "https_functional": 1,
         "host": "speedtestgoa02.bigventuresmedia.com:8080",
-        "ipv4": "103.182.220.65",
+        "ipv4": "103.173.136.123",
         "asn": "",
-        "ipv6": "2001:df7:9e80::12"
+        "ipv6": "2001:df7:9e80::11e"
     },
     {
         "url": "http://speedtest.gvreddy.in:8080/speedtest/upload.php",
@@ -78376,7 +78399,7 @@
         "id": 62200,
         "https_functional": 1,
         "host": "blrbras.bigventuresmedia.com:8080",
-        "ipv4": "103.13.43.1",
+        "ipv4": "103.173.136.127",
         "asn": "",
         "ipv6": "2001:df7:9e80::7e"
     },
@@ -79534,7 +79557,7 @@
         "host": "yyc-speedtest.xplore.ca.prod.hosts.ooklaserver.net:8080",
         "ipv4": "69.168.185.53",
         "asn": "",
-        "ipv6": "2606:8c00:0:4::3"
+        "ipv6": "2606:8c00:0:3::3"
     },
     {
         "url": "http://clgqaspd01.srvr.bell.ca:8080/speedtest/upload.php",
@@ -80471,7 +80494,7 @@
         "id": 12289,
         "https_functional": 1,
         "host": "speedtest.navetech.net.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "170.81.108.252",
         "asn": ""
     },
     {
@@ -81599,7 +81622,7 @@
         "id": 61660,
         "https_functional": 1,
         "host": "bolaang-mongondow.trisuladata.net.id:8080",
-        "ipv4": "::ffff:103.155.190.75",
+        "ipv4": "103.155.190.75",
         "asn": "",
         "ipv6": "::ffff:103.155.190.75"
     },
@@ -81629,7 +81652,7 @@
         "id": 61659,
         "https_functional": 1,
         "host": "pohuwato.trisuladata.net.id:8080",
-        "ipv4": "103.155.190.74",
+        "ipv4": "::ffff:103.155.190.74",
         "asn": "",
         "ipv6": "::ffff:103.155.190.74"
     },
@@ -81757,7 +81780,7 @@
         "id": 61163,
         "https_functional": 1,
         "host": "nganjuk.trisuladata.net.id:8080",
-        "ipv4": "::ffff:103.155.190.68",
+        "ipv4": "103.155.190.68",
         "asn": "",
         "ipv6": "::ffff:103.155.190.68"
     },
@@ -81816,7 +81839,7 @@
         "id": 60585,
         "https_functional": 1,
         "host": "speed.trisuladata.net.id:8080",
-        "ipv4": "::ffff:103.155.190.67",
+        "ipv4": "103.155.190.67",
         "asn": "",
         "ipv6": "::ffff:103.155.190.67"
     },
@@ -82698,7 +82721,7 @@
         "id": 62691,
         "https_functional": 1,
         "host": "speedtest-3.compute.dc1.cilix.cloud.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "178.248.72.8",
+        "ipv4": "89.117.218.105",
         "asn": ""
     },
     {
@@ -83422,7 +83445,7 @@
         "id": 61937,
         "https_functional": 1,
         "host": "vel01.conectarbrasil.tec.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "179.125.15.4",
         "asn": ""
     },
     {
@@ -84836,7 +84859,7 @@
         "host": "st.jrnetfibraoptica.com.br:8080",
         "ipv4": "45.180.36.21",
         "asn": "",
-        "ipv6": "2804:5fcc:2::21"
+        "ipv6": "2804:5fcc:3::2"
     },
     {
         "url": "http://ookla.dginet.net.br:8080/speedtest/upload.php",
@@ -84849,9 +84872,8 @@
         "id": 40342,
         "https_functional": 1,
         "host": "ookla.dginet.net.br:8080",
-        "ipv4": "170.233.96.42",
-        "asn": "",
-        "ipv6": "2804:326c:0:81::2"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest.interone.com.br:8080/speedtest/upload.php",
@@ -85592,7 +85614,7 @@
         "id": 33951,
         "https_functional": 1,
         "host": "speedtest.inventiontechnical.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "103.180.222.246",
         "asn": ""
     },
     {
@@ -86221,7 +86243,7 @@
         "id": 61711,
         "https_functional": 1,
         "host": "speedtest.digitelss.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:102.222.61.42",
+        "ipv4": "102.222.61.42",
         "asn": "",
         "ipv6": "::ffff:102.222.61.42"
     },
@@ -86466,7 +86488,7 @@
         "id": 50440,
         "https_functional": 1,
         "host": "speedtest.speednetwork.mx.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:201.131.198.30",
+        "ipv4": "201.131.198.30",
         "asn": "",
         "ipv6": "::ffff:201.131.198.30"
     },
@@ -87361,7 +87383,7 @@
         "id": 61862,
         "https_functional": 1,
         "host": "testspeed.hijrah.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.154.25.34",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -87547,9 +87569,8 @@
         "id": 14389,
         "https_functional": 1,
         "host": "speedtest.jamii.co.ke.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "197.232.56.64",
-        "asn": "",
-        "ipv6": "fe80::14d8:b4ff:fed4:656a"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest.uii.net.id:8080/speedtest/upload.php",
@@ -88099,8 +88120,9 @@
         "id": 41031,
         "https_functional": 1,
         "host": "ookla.mdnnetwork.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "191.7.104.201",
+        "asn": "",
+        "ipv6": "2804:74f4:1:b::2"
     },
     {
         "url": "https://ookla.megaonda.net.br:8080/speedtest/upload.php",
@@ -89222,7 +89244,7 @@
         "id": 61264,
         "https_functional": 1,
         "host": "speed.ultranetconexionesinalambricas.com.co:8080",
-        "ipv4": "181.204.172.67",
+        "ipv4": "::ffff:181.204.172.67",
         "asn": "",
         "ipv6": "::ffff:181.204.172.67"
     },
@@ -90268,8 +90290,7 @@
         "https_functional": 1,
         "host": "central.twspeed.com.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "177.22.184.3",
-        "asn": "",
-        "ipv6": "2804:f08:0:2::3"
+        "asn": ""
     },
     {
         "url": "https://speedtest.fynndows.de:8080/speedtest/upload.php",
@@ -90444,7 +90465,7 @@
         "id": 48917,
         "https_functional": 1,
         "host": "pasig-speedtest.ewstelcoserv.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.167.66.172",
+        "ipv4": "::ffff:103.167.66.172",
         "asn": "",
         "ipv6": "::ffff:103.167.66.172"
     },
@@ -90459,9 +90480,9 @@
         "id": 48914,
         "https_functional": 1,
         "host": "naic-speedtest.ewstelcoserv.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.167.66.171",
+        "ipv4": "103.186.139.146",
         "asn": "",
-        "ipv6": "::ffff:103.167.66.171"
+        "ipv6": "2400:c3e0:0:2::1:2"
     },
     {
         "url": "http://speedtest.swu.de:8080/speedtest/upload.php",
@@ -91710,9 +91731,8 @@
         "id": 60531,
         "https_functional": 1,
         "host": "teste.alterbytenet.com.br:8080",
-        "ipv4": "209.14.155.103",
-        "asn": "",
-        "ipv6": "2804:574:2003:8:8888::2"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest.proftelekom.ru:8080/speedtest/upload.php",
@@ -92182,7 +92202,7 @@
         "id": 60473,
         "https_functional": 1,
         "host": "speed.hocnetwork.my.id:8080",
-        "ipv4": "::ffff:103.144.213.107",
+        "ipv4": "103.144.213.107",
         "asn": "",
         "ipv6": "::ffff:103.144.213.107"
     },
@@ -92399,7 +92419,7 @@
         "id": 40708,
         "https_functional": 1,
         "host": "speedtest-bhw.broadlink.com.np.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.232.229.110",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -92428,7 +92448,7 @@
         "id": 40699,
         "https_functional": 1,
         "host": "speedtest.broadlink.com.np.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "182.50.64.100",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -92442,7 +92462,7 @@
         "id": 50925,
         "https_functional": 1,
         "host": "speedtest.cloudlasers.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.211.9.2",
+        "ipv4": "::ffff:103.211.9.2",
         "asn": "",
         "ipv6": "::ffff:103.211.9.2"
     },
@@ -92604,7 +92624,7 @@
         "id": 38212,
         "https_functional": 1,
         "host": "fibertest.bezeq.co.il:8080",
-        "ipv4": "147.235.182.253",
+        "ipv4": "147.235.182.249",
         "asn": ""
     },
     {
@@ -94269,7 +94289,7 @@
         "id": 27979,
         "https_functional": 1,
         "host": "speedtest.dascacable.com:8080",
-        "ipv4": "",
+        "ipv4": "103.91.140.25",
         "asn": ""
     },
     {
@@ -94746,8 +94766,9 @@
         "id": 12238,
         "https_functional": 1,
         "host": "ookla.cybernetprovider.net.br:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "170.80.112.22",
+        "asn": "",
+        "ipv6": "2804:36d8:0:105::2"
     },
     {
         "url": "http://speedtest.cybernetpe.com.br:8080/speedtest/upload.php",
@@ -94960,9 +94981,8 @@
         "id": 41760,
         "https_functional": 1,
         "host": "speedtest.skyberbroadband.co.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.130.110.19",
-        "asn": "",
-        "ipv6": "2001:df2:5080::16"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://selu.skybiznet.com:8080/speedtest/upload.php",
@@ -95163,7 +95183,7 @@
         "id": 61113,
         "https_functional": 1,
         "host": "speedtest.ptcybmedia.my.id:8080",
-        "ipv4": "::ffff:103.168.44.47",
+        "ipv4": "103.168.44.47",
         "asn": "",
         "ipv6": "::ffff:103.168.44.47"
     },
@@ -95280,7 +95300,7 @@
         "id": 62949,
         "https_functional": 1,
         "host": "speedtest.globalexperts.pk.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.67.166.13",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -95468,7 +95488,7 @@
         "id": 57755,
         "https_functional": 1,
         "host": "supetar-speedtest.ma-informatika.com.hr.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "213.186.6.93",
+        "ipv4": "213.186.6.85",
         "asn": ""
     },
     {
@@ -95482,7 +95502,7 @@
         "id": 30845,
         "https_functional": 1,
         "host": "brac.ma-informatika.com.hr.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "213.186.6.77",
         "asn": ""
     },
     {
@@ -96639,7 +96659,7 @@
         "id": 58723,
         "https_functional": 1,
         "host": "speedtest3.pratatelecom.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.191.160.13",
+        "ipv4": "45.191.160.15",
         "asn": "",
         "ipv6": "2804:68a8:b000:818::2"
     },
@@ -98714,7 +98734,7 @@
         "id": 3900,
         "https_functional": 1,
         "host": "speedtest1.mtn.com.gh.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "196.201.61.131",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -99597,8 +99617,7 @@
         "https_functional": 1,
         "host": "speedtest.portalink.net.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "168.227.112.20",
-        "asn": "",
-        "ipv6": "2804:2f70::20"
+        "asn": ""
     },
     {
         "url": "https://teste.fibras.info:8080/speedtest/upload.php",
@@ -100004,7 +100023,7 @@
         "id": 32149,
         "https_functional": 1,
         "host": "speedtest.wakewireless.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "192.132.205.100",
+        "ipv4": "192.132.205.86",
         "asn": ""
     },
     {
@@ -100120,7 +100139,7 @@
         "id": 9103,
         "https_functional": 1,
         "host": "sp1.retecomtv.com:8080",
-        "ipv4": "87.121.51.18",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -101475,7 +101494,8 @@
         "https_functional": 1,
         "host": "speedtest.g3netinfo.com.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "45.224.16.6",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:4638:0:10::6"
     },
     {
         "url": "http://sp1.123net.link:8080/speedtest/upload.php",
@@ -101502,7 +101522,7 @@
         "id": 10037,
         "https_functional": 1,
         "host": "speedtest.maxcom.hn.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.7.237.108",
+        "ipv4": "45.7.237.106",
         "asn": ""
     },
     {
@@ -101633,7 +101653,7 @@
         "host": "velocimetro.compunetcaxias.com.br:8080",
         "ipv4": "149.78.0.18",
         "asn": "",
-        "ipv6": "2804:8988:9::8"
+        "ipv6": "2804:4f3c:e340:9::18"
     },
     {
         "url": "https://speendtesttechnetcaxias.com.br:8080/speedtest/upload.php",
@@ -102892,7 +102912,7 @@
         "id": 21861,
         "https_functional": 1,
         "host": "velocimetro-rbo.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "179.234.65.139",
+        "ipv4": "179.234.65.141",
         "asn": ""
     },
     {
@@ -103023,7 +103043,7 @@
         "id": 62356,
         "https_functional": 1,
         "host": "speed.metfy.cl:8080",
-        "ipv4": "::ffff:45.184.85.2",
+        "ipv4": "45.184.85.2",
         "asn": "",
         "ipv6": "::ffff:45.184.85.2"
     },
@@ -103097,7 +103117,7 @@
         "host": "st1.onetouchitservices.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.61.243.250",
         "asn": "",
-        "ipv6": "2001:df3:b6c0::1"
+        "ipv6": "2001:df3:b6c0::2"
     },
     {
         "url": "http://speedtest.airwaybroadband.com:8080/speedtest/upload.php",
@@ -103312,7 +103332,7 @@
         "id": 30924,
         "https_functional": 1,
         "host": "speedtest.expressnetsc.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "172.67.129.142",
+        "ipv4": "104.21.2.186",
         "asn": "",
         "ipv6": "2606:4700:3036::ac43:818e"
     },
@@ -103372,7 +103392,8 @@
         "https_functional": 1,
         "host": "sp1.housenet.net.br:8080",
         "ipv4": "45.6.192.36",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:3da8:0:2::36"
     },
     {
         "url": "http://speedtest01.o-net.ca:8080/speedtest/upload.php",
@@ -104640,7 +104661,7 @@
         "id": 57002,
         "https_functional": 1,
         "host": "wifinettelecomunicaciones.store.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:138.186.20.244",
+        "ipv4": "138.186.20.244",
         "asn": "",
         "ipv6": "::ffff:138.186.20.244"
     },
@@ -105507,9 +105528,9 @@
         "id": 61639,
         "https_functional": 1,
         "host": "speedtest.teltan.com.mx.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "200.108.187.126",
+        "ipv4": "200.108.187.61",
         "asn": "",
-        "ipv6": "2806:3a5:1:2:1e66:6dff:fe8b:925c"
+        "ipv6": "2806:3a5:101::2"
     },
     {
         "url": "http://sp1.agilityquixere.com.br:8080/speedtest/upload.php",
@@ -105522,7 +105543,7 @@
         "id": 43813,
         "https_functional": 1,
         "host": "sp1.agilityquixere.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "187.19.194.15",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -106975,9 +106996,9 @@
         "id": 14237,
         "https_functional": 1,
         "host": "miami.fl.speedtest.frontier.com:8080",
-        "ipv4": "172.99.36.49",
+        "ipv4": "172.99.63.3",
         "asn": "",
-        "ipv6": "2606:4d80:1000::b"
+        "ipv6": "2606:4d80:1000::9"
     },
     {
         "url": "http://velocidad.wistarip.com:8080/speedtest/upload.php",
@@ -108002,8 +108023,9 @@
         "id": 53105,
         "https_functional": 1,
         "host": "speedtest2.esrv.center.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "45.157.234.19",
+        "asn": "",
+        "ipv6": "2a0d:5940:24:1:45:157:234:19"
     },
     {
         "url": "http://speedtest.58243.as:8080/speedtest/upload.php",
@@ -108175,8 +108197,9 @@
         "id": 61330,
         "https_functional": 1,
         "host": "speed.okfoz.com.br:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "177.87.108.193",
+        "asn": "",
+        "ipv6": "2804:2584:4:cafe:ffff:ffff:ffff:254"
     },
     {
         "url": "https://velocimetro.kfinternet.com.br:8080/speedtest/upload.php",
@@ -110049,7 +110072,8 @@
         "https_functional": 1,
         "host": "rnc.speedtest.railtel.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "112.133.224.162",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2401:b200:12::161"
     },
     {
         "url": "http://bsp.speedtest.railtel.in:8080/speedtest/upload.php",
@@ -110091,7 +110115,7 @@
         "id": 62228,
         "https_functional": 1,
         "host": "speedtest.joister.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "120.138.97.108",
+        "ipv4": "120.138.97.110",
         "asn": ""
     },
     {
@@ -110150,7 +110174,7 @@
         "id": 62306,
         "https_functional": 1,
         "host": "speedtest.stadtwerke-neustrelitz.de.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "149.249.225.10",
+        "ipv4": "185.147.168.21",
         "asn": ""
     },
     {
@@ -110354,7 +110378,7 @@
         "id": 54583,
         "https_functional": 1,
         "host": "latacungaspeed.atvcableltga.ec:8080",
-        "ipv4": "200.24.136.104",
+        "ipv4": "::ffff:200.24.136.104",
         "asn": "",
         "ipv6": "::ffff:200.24.136.104"
     },
@@ -111854,7 +111878,7 @@
         "host": "abrego.provinet.co.prod.hosts.ooklaserver.net:8080",
         "ipv4": "45.173.6.211",
         "asn": "",
-        "ipv6": "2800:b70:2:6001:14be:ffff:fe9f:cd9e"
+        "ipv6": "2800:b70:2:6001:ff18:116f:26a6:1c93"
     },
     {
         "url": "http://comsset.sergioqos.com:8080/speedtest/upload.php",
@@ -111898,8 +111922,7 @@
         "https_functional": 1,
         "host": "speedtest.vivotv.org.prod.hosts.ooklaserver.net:8080",
         "ipv4": "209.45.20.129",
-        "asn": "",
-        "ipv6": "2803:a850:e000:201::129"
+        "asn": ""
     },
     {
         "url": "http://speedtest2.sirio.com.bo:8080/speedtest/upload.php",
@@ -112288,9 +112311,9 @@
         "id": 53616,
         "https_functional": 1,
         "host": "hubli.level3.support.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.189.57.251",
+        "ipv4": "103.89.233.194",
         "asn": "",
-        "ipv6": "2403:7340:7340::5b"
+        "ipv6": "2403:7340:1::3"
     },
     {
         "url": "https://lg-kie.fdcservers.net:8080/speedtest/upload.php",
@@ -112304,7 +112327,8 @@
         "https_functional": 1,
         "host": "lg-kie.fdcservers.net:8080",
         "ipv4": "50.7.249.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0b8::4"
     },
     {
         "url": "https://lg-bai.fdcservers.net:8080/speedtest/upload.php",
@@ -112318,7 +112342,8 @@
         "https_functional": 1,
         "host": "lg-bai.fdcservers.net:8080",
         "ipv4": "66.90.73.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0fe::4"
     },
     {
         "url": "https://lg-tok.fdcservers.net:8080/speedtest/upload.php",
@@ -112332,7 +112357,8 @@
         "https_functional": 1,
         "host": "lg-tok.fdcservers.net:8080",
         "ipv4": "50.7.159.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0d9::4"
     },
     {
         "url": "https://lg-hkg.fdcservers.net:8080/speedtest/upload.php",
@@ -112346,7 +112372,8 @@
         "https_functional": 1,
         "host": "lg-hkg.fdcservers.net:8080",
         "ipv4": "50.7.251.4",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2001:49f0:d0da::2"
     },
     {
         "url": "http://lg-syd.fdcservers.net:8080/speedtest/upload.php",
@@ -112993,7 +113020,7 @@
         "id": 59305,
         "https_functional": 1,
         "host": "ookla.taffnet.id:8080",
-        "ipv4": "::ffff:103.174.123.7",
+        "ipv4": "103.174.123.7",
         "asn": "",
         "ipv6": "::ffff:103.174.123.7"
     },
@@ -113008,7 +113035,7 @@
         "id": 61900,
         "https_functional": 1,
         "host": "surabaya.rwgwifi.my.id:8080",
-        "ipv4": "::ffff:103.127.132.45",
+        "ipv4": "103.127.132.45",
         "asn": "",
         "ipv6": "::ffff:103.127.132.45"
     },
@@ -114476,7 +114503,7 @@
         "id": 55319,
         "https_functional": 1,
         "host": "speedtest.sbsystem.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:103.171.73.10",
+        "ipv4": "103.171.73.10",
         "asn": "",
         "ipv6": "::ffff:103.171.73.10"
     },
@@ -114850,8 +114877,7 @@
         "https_functional": 1,
         "host": "speedtest-medina.sa.zain.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "185.23.125.245",
-        "asn": "",
-        "ipv6": "2a02:cb81:1001::84"
+        "asn": ""
     },
     {
         "url": "https://hafar-speedtest.saudi.net.sa:8080/speedtest/upload.php",
@@ -115574,7 +115600,7 @@
         "id": 60639,
         "https_functional": 1,
         "host": "speedtestkorba.mahamayainternet.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:103.169.175.4",
+        "ipv4": "103.169.175.4",
         "asn": "",
         "ipv6": "::ffff:103.169.175.4"
     },
@@ -115589,7 +115615,7 @@
         "id": 30273,
         "https_functional": 1,
         "host": "speedtest1.mahamayainternet.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.169.174.250",
+        "ipv4": "::ffff:103.169.174.250",
         "asn": "",
         "ipv6": "::ffff:103.169.174.250"
     },
@@ -115619,7 +115645,7 @@
         "id": 42165,
         "https_functional": 1,
         "host": "speedtestbalodabazar1.mahamayainternet.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:103.169.175.100",
+        "ipv4": "103.169.175.100",
         "asn": "",
         "ipv6": "::ffff:103.169.175.100"
     },
@@ -116991,7 +117017,7 @@
         "id": 48245,
         "https_functional": 1,
         "host": "teste.diginet-isp.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "186.193.252.6",
+        "ipv4": "",
         "asn": "",
         "ipv6": "2804:7c88:3000:2::2"
     },
@@ -117759,7 +117785,7 @@
         "id": 42981,
         "https_functional": 1,
         "host": "speedtest.gorkhainfotech.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.156.121.50",
+        "ipv4": "::ffff:103.156.121.50",
         "asn": "",
         "ipv6": "::ffff:103.156.121.50"
     },
@@ -118575,7 +118601,7 @@
         "host": "speedest6.kw.zain.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "212.43.17.254",
         "asn": "",
-        "ipv6": "2a00:4520:2:1::2d"
+        "ipv6": "2a00:4520:2:1::2e"
     },
     {
         "url": "http://speedtest2.stc.com.bh:8080/speedtest/upload.php",
@@ -119088,7 +119114,7 @@
         "id": 45622,
         "https_functional": 1,
         "host": "speedtest-eastern.tm.com.my:8080",
-        "ipv4": "58.27.108.233",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -119804,7 +119830,7 @@
         "id": 44147,
         "https_functional": 1,
         "host": "ookla.foptik.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "190.211.80.34",
+        "ipv4": "190.136.209.126",
         "asn": "",
         "ipv6": "2800:a30:bacb:68::2"
     },
@@ -121089,7 +121115,8 @@
         "https_functional": 1,
         "host": "speedtest.worldphone.in:8080",
         "ipv4": "14.102.27.132",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2402:5b00:40::9e"
     },
     {
         "url": "http://speedtest14.worldphone.in:8080/speedtest/upload.php",
@@ -122102,7 +122129,7 @@
         "id": 24587,
         "https_functional": 1,
         "host": "speedtest.routelink.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "203.190.112.21",
+        "ipv4": "103.161.62.58",
         "asn": "",
         "ipv6": "2405:a540:1002:112::a51a"
     },
@@ -122160,7 +122187,7 @@
         "id": 43073,
         "https_functional": 1,
         "host": "basavrajwifi.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:43.246.243.41",
+        "ipv4": "43.246.243.41",
         "asn": "",
         "ipv6": "::ffff:43.246.243.41"
     },
@@ -122440,7 +122467,7 @@
         "id": 9956,
         "https_functional": 1,
         "host": "sp1.live.psi.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "177.66.72.60",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -122880,8 +122907,7 @@
         "https_functional": 1,
         "host": "sp1.fibraontelecom.com.br:8080",
         "ipv4": "143.0.124.54",
-        "asn": "",
-        "ipv6": "2804:2924::54"
+        "asn": ""
     },
     {
         "url": "https://ookla.infosetefibra.com.br:8080/speedtest/upload.php",
@@ -123930,7 +123956,7 @@
         "id": 26287,
         "https_functional": 1,
         "host": "speedtest.iterika.ru.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "91.229.74.100",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -124650,9 +124676,9 @@
         "id": 23029,
         "https_functional": 1,
         "host": "speedtest.rochanet.net.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.178.33.53",
+        "ipv4": "45.178.33.10",
         "asn": "",
-        "ipv6": "2804:4998:ff:e001::22"
+        "ipv6": "2804:4998:ff:e003::10"
     },
     {
         "url": "http://speedtest.nettop.com.br:8080/speedtest/upload.php",
@@ -124694,7 +124720,7 @@
         "id": 22269,
         "https_functional": 1,
         "host": "velocimetro-soc.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "189.5.53.235",
+        "ipv4": "189.5.53.237",
         "asn": ""
     },
     {
@@ -125009,9 +125035,8 @@
         "id": 34501,
         "https_functional": 1,
         "host": "teste.ibexnet.com.br:8080",
-        "ipv4": "45.233.152.8",
-        "asn": "",
-        "ipv6": "2804:4bc4:bebe:c0ca::8"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtestfar.brsulnet.net.br:8080/speedtest/upload.php",
@@ -125240,9 +125265,8 @@
         "id": 53723,
         "https_functional": 1,
         "host": "speedtest.grmfibra.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.164.180.66",
-        "asn": "",
-        "ipv6": "2804:543c:100::12"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://ookla-speedtest.irminternet.com.br:8080/speedtest/upload.php",
@@ -126363,7 +126387,7 @@
         "host": "speedtestmtn.nayatel.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "101.50.91.14",
         "asn": "",
-        "ipv6": "2407:d000:23:a:3436:75ff:fe4a:65ab"
+        "ipv6": "2407:d000:810::3"
     },
     {
         "url": "http://spmul.getlinks.net.pk:8080/speedtest/upload.php",
@@ -126581,7 +126605,7 @@
         "host": "speedtestahmd.actcorp.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "124.123.126.10",
         "asn": "",
-        "ipv6": "2406:b400:f0:1::254"
+        "ipv6": "2406:b400:1::66"
     },
     {
         "url": "http://kispl.isp.krutarth.network:8080/speedtest/upload.php",
@@ -127467,7 +127491,7 @@
         "id": 44120,
         "https_functional": 1,
         "host": "speedtest4.gpm.co.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "116.206.213.148",
+        "ipv4": "116.206.213.14",
         "asn": "",
         "ipv6": "2400:d680::5fed:7e57:3"
     },
@@ -127497,7 +127521,7 @@
         "id": 58272,
         "https_functional": 1,
         "host": "estt.fazanetwork.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.220.22.42",
+        "ipv4": "::ffff:103.220.22.42",
         "asn": "",
         "ipv6": "::ffff:103.220.22.42"
     },
@@ -127528,8 +127552,7 @@
         "https_functional": 1,
         "host": "riznetwork.jsn-lmg.my.id.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.80.81.181",
-        "asn": "",
-        "ipv6": "2400:4ec0:8500:1991::181"
+        "asn": ""
     },
     {
         "url": "http://speedtestlmg.dmt.net.id:8080/speedtest/upload.php",
@@ -127632,8 +127655,9 @@
         "id": 59123,
         "https_functional": 1,
         "host": "tanjungkarang.speedtest.telkom.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "125.160.11.30",
+        "asn": "",
+        "ipv6": "2001:4489:114:100::102"
     },
     {
         "url": "https://sptbdl.lintasdata.net.id:8080/speedtest/upload.php",
@@ -129003,9 +129027,8 @@
         "id": 51327,
         "https_functional": 1,
         "host": "test.mrtelecom.com.br:8080",
-        "ipv4": "187.16.244.12",
-        "asn": "",
-        "ipv6": "2804:8b10:1::11"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest.sourjnet.com.br:8080/speedtest/upload.php",
@@ -129163,7 +129186,7 @@
         "id": 60111,
         "https_functional": 1,
         "host": "speed.conexionsur.net:8080",
-        "ipv4": "::ffff:181.191.223.130",
+        "ipv4": "181.191.223.130",
         "asn": "",
         "ipv6": "::ffff:181.191.223.130"
     },
@@ -129930,8 +129953,9 @@
         "id": 59518,
         "https_functional": 1,
         "host": "speedtest.itn-id.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "103.217.146.38",
+        "asn": "",
+        "ipv6": "2001:470:35:5ad::2"
     },
     {
         "url": "http://somtelpl.com:8080/speedtest/upload.php",
@@ -130264,7 +130288,7 @@
         "id": 9975,
         "https_functional": 1,
         "host": "speedtest1.maisnetinternet.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "168.227.184.24",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -130498,7 +130522,7 @@
         "id": 50615,
         "https_functional": 1,
         "host": "speedtest.masterstar.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.169.255.162",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -130512,7 +130536,7 @@
         "id": 61856,
         "https_functional": 1,
         "host": "spidtest.masterstar.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.169.254.27",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -130845,7 +130869,7 @@
         "id": 60083,
         "https_functional": 1,
         "host": "speedtest.um-tel.co.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:103.179.176.18",
+        "ipv4": "103.179.176.18",
         "asn": "",
         "ipv6": "::ffff:103.179.176.18"
     },
@@ -130920,7 +130944,7 @@
         "id": 42520,
         "https_functional": 1,
         "host": "velocidade.topconnect.net.br:8080",
-        "ipv4": "45.230.252.71",
+        "ipv4": "192.168.0.1",
         "asn": "",
         "ipv6": "2804:4960:8000::a"
     },
@@ -131552,7 +131576,7 @@
         "id": 61517,
         "https_functional": 1,
         "host": "chg.speedtest.pni.tw.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "103.127.218.249",
         "asn": ""
     },
     {
@@ -131984,7 +132008,7 @@
         "host": "ezinet.level3.support:8080",
         "ipv4": "103.155.226.226",
         "asn": "",
-        "ipv6": "2403:7340:1::31"
+        "ipv6": "2403:7340:1::19"
     },
     {
         "url": "https://ooklatestnashik.live.vodafone.in:8080/speedtest/upload.php",
@@ -133096,7 +133120,7 @@
         "id": 62964,
         "https_functional": 1,
         "host": "ooklacsp.veren.co.za.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "154.0.7.20",
+        "ipv4": "154.0.7.3",
         "asn": ""
     },
     {
@@ -133416,7 +133440,7 @@
         "id": 60110,
         "https_functional": 1,
         "host": "speedwireless.conexionsur.net:8080",
-        "ipv4": "::ffff:143.202.96.201",
+        "ipv4": "143.202.96.201",
         "asn": "",
         "ipv6": "::ffff:143.202.96.201"
     },
@@ -133632,7 +133656,7 @@
         "id": 57741,
         "https_functional": 1,
         "host": "demo.globalbroad.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:103.39.237.66",
+        "ipv4": "103.39.237.66",
         "asn": "",
         "ipv6": "::ffff:103.39.237.66"
     },
@@ -133647,7 +133671,7 @@
         "id": 59222,
         "https_functional": 1,
         "host": "pth.globalbroad.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.39.237.68",
+        "ipv4": "::ffff:103.39.237.68",
         "asn": "",
         "ipv6": "::ffff:103.39.237.68"
     },
@@ -134595,7 +134619,7 @@
         "id": 44117,
         "https_functional": 1,
         "host": "speedtest2.gpm.co.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "116.206.213.146",
+        "ipv4": "116.206.213.12",
         "asn": "",
         "ipv6": "2400:d680::5fed:7e57:1"
     },
@@ -134610,7 +134634,7 @@
         "id": 44129,
         "https_functional": 1,
         "host": "speedtest10.gpm.co.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "116.206.213.154",
+        "ipv4": "116.206.213.20",
         "asn": "",
         "ipv6": "2400:d680::5fed:7e57:9"
     },
@@ -134788,7 +134812,7 @@
         "host": "speedtest.powerredtelecom.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "38.123.72.1",
         "asn": "",
-        "ipv6": "2001:470:ba2d:42b:19d3:1e41:b281:e79a"
+        "ipv6": "2001:470:ba2d:606:32f5:aa37:7ab0:13e1"
     },
     {
         "url": "http://speedtest7.point-broadband.com:8080/speedtest/upload.php",
@@ -134887,9 +134911,9 @@
         "id": 2515,
         "https_functional": 1,
         "host": "speedtest.fpt.vn.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "118.70.71.216",
+        "ipv4": "210.245.15.5",
         "asn": "",
-        "ipv6": "2405:4800:106:34::216"
+        "ipv6": "2405:4802:f500::185"
     },
     {
         "url": "http://teste.tefnettecnologia.com.br:8080/speedtest/upload.php",
@@ -135237,8 +135261,7 @@
         "https_functional": 1,
         "host": "speedtest.fastlayer.eu.prod.hosts.ooklaserver.net:8080",
         "ipv4": "185.155.223.82",
-        "asn": "",
-        "ipv6": "2a12:de40:1::2"
+        "asn": ""
     },
     {
         "url": "http://sp1.mikronetprovedor.com.br:8080/speedtest/upload.php",
@@ -136202,9 +136225,9 @@
         "id": 26958,
         "https_functional": 1,
         "host": "speedtest.linfortel.com.br:8080",
-        "ipv4": "104.21.77.71",
+        "ipv4": "170.233.24.14",
         "asn": "",
-        "ipv6": "2606:4700:3032::6815:4d47"
+        "ipv6": "2804:3290:ffff:fff2::2"
     },
     {
         "url": "http://speedtest.flynet.net.br:8080/speedtest/upload.php",
@@ -136596,7 +136619,7 @@
         "id": 50306,
         "https_functional": 1,
         "host": "pallatangaspeed.pedidosven.com:8080",
-        "ipv4": "::ffff:181.39.19.84",
+        "ipv4": "181.39.19.84",
         "asn": "",
         "ipv6": "::ffff:181.39.19.84"
     },
@@ -136640,9 +136663,8 @@
         "id": 62325,
         "https_functional": 1,
         "host": "cravstest.cravnet.net.br:8080",
-        "ipv4": "160.238.238.20",
-        "asn": "",
-        "ipv6": "2804:3e28:8000::20"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest.vnetvp.com.br:8080/speedtest/upload.php",
@@ -136818,7 +136840,7 @@
         "id": 22062,
         "https_functional": 1,
         "host": "velocimetro-tsa.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "191.189.255.235",
+        "ipv4": "191.189.255.226",
         "asn": ""
     },
     {
@@ -136832,7 +136854,7 @@
         "id": 15014,
         "https_functional": 1,
         "host": "velocimetro-bsb.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "189.6.45.172",
+        "ipv4": "189.6.45.174",
         "asn": ""
     },
     {
@@ -136860,7 +136882,7 @@
         "id": 22251,
         "https_functional": 1,
         "host": "velocimetro-cpe.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "189.7.76.138",
+        "ipv4": "189.7.76.140",
         "asn": ""
     },
     {
@@ -136874,7 +136896,7 @@
         "id": 21836,
         "https_functional": 1,
         "host": "velocimetro-sdr.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "186.207.163.197",
+        "ipv4": "186.207.163.195",
         "asn": ""
     },
     {
@@ -136959,7 +136981,7 @@
         "id": 21935,
         "https_functional": 1,
         "host": "velocimetro-oco.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "191.183.80.244",
+        "ipv4": "191.183.80.245",
         "asn": ""
     },
     {
@@ -137001,7 +137023,7 @@
         "id": 21837,
         "https_functional": 1,
         "host": "velocimetro-sjc.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "187.106.140.118",
+        "ipv4": "187.106.140.115",
         "asn": ""
     },
     {
@@ -137058,7 +137080,7 @@
         "id": 21852,
         "https_functional": 1,
         "host": "velocimetro-sts.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "189.34.131.3",
+        "ipv4": "189.34.131.5",
         "asn": ""
     },
     {
@@ -137087,7 +137109,7 @@
         "id": 14612,
         "https_functional": 1,
         "host": "velocimetro-rjo.virtua.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "201.17.21.155",
+        "ipv4": "201.17.21.154",
         "asn": ""
     },
     {
@@ -137347,9 +137369,9 @@
         "id": 27544,
         "https_functional": 1,
         "host": "speedtest.fibernetcacu.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.233.40.147",
+        "ipv4": "192.141.238.18",
         "asn": "",
-        "ipv6": "2804:3740:3b0::2"
+        "ipv6": "2804:8f38:0:21::2"
     },
     {
         "url": "http://speedtest.iacunet.com.br:8080/speedtest/upload.php",
@@ -137697,7 +137719,7 @@
         "id": 53289,
         "https_functional": 1,
         "host": "speedtest.bsc.rw.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "197.243.108.182",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -137843,9 +137865,8 @@
         "id": 59343,
         "https_functional": 1,
         "host": "speedtest.gntt.net.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.176.243.241",
-        "asn": "",
-        "ipv6": "2804:5d40:4010::2"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest005.telecomitalia.it:8080/speedtest/upload.php",
@@ -137918,7 +137939,7 @@
         "id": 58773,
         "https_functional": 1,
         "host": "velocimetros.gntelecom.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "172.67.145.141",
+        "ipv4": "104.21.81.181",
         "asn": "",
         "ipv6": "2606:4700:3030::ac43:918d"
     },
@@ -138440,7 +138461,7 @@
         "id": 40060,
         "https_functional": 1,
         "host": "speedtest.mercantile.com.np.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "202.52.255.62",
+        "ipv4": "27.111.31.62",
         "asn": "",
         "ipv6": "2400:a400:10:6::3e"
     },
@@ -139115,7 +139136,7 @@
         "id": 44819,
         "https_functional": 1,
         "host": "coverage1.mobicom.mn.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "27.123.213.90",
+        "ipv4": "27.123.215.190",
         "asn": ""
     },
     {
@@ -140248,7 +140269,7 @@
         "id": 43583,
         "https_functional": 1,
         "host": "pvl-st.astel.kz.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "213.157.52.26",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -140408,7 +140429,8 @@
         "https_functional": 1,
         "host": "speedtest.veloxr.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.96.40.250",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2405:3440:2:1260::1a"
     },
     {
         "url": "http://speed.guerratelecom.com.br:8080/speedtest/upload.php",
@@ -140581,7 +140603,7 @@
         "id": 34127,
         "https_functional": 1,
         "host": "speedtest.cosotnet.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "104.247.70.226",
         "asn": ""
     },
     {
@@ -141991,7 +142013,7 @@
         "id": 47415,
         "https_functional": 1,
         "host": "speedtest.brilliantairfiber.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.125.179.125",
+        "ipv4": "::ffff:103.125.179.125",
         "asn": "",
         "ipv6": "::ffff:103.125.179.125"
     },
@@ -142021,7 +142043,7 @@
         "id": 55054,
         "https_functional": 1,
         "host": "speedtestbhp.cloudskybroadband.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:103.195.72.42",
+        "ipv4": "103.195.72.42",
         "asn": "",
         "ipv6": "::ffff:103.195.72.42"
     },
@@ -142168,7 +142190,8 @@
         "https_functional": 1,
         "host": "speedtest.n4uspl.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.59.201.6",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2402:fbc0:f::5555:4446"
     },
     {
         "url": "http://speedtest.kovdor.tv:8080/speedtest/upload.php",
@@ -142238,9 +142261,9 @@
         "id": 61806,
         "https_functional": 1,
         "host": "debian.vwnet.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "172.67.136.119",
+        "ipv4": "45.230.28.115",
         "asn": "",
-        "ipv6": "2606:4700:3033::6815:26a5"
+        "ipv6": "2804:164:f100:4000::3"
     },
     {
         "url": "https://speedtest01.wowrack.com:8080/speedtest/upload.php",
@@ -143244,7 +143267,8 @@
         "https_functional": 1,
         "host": "speedtest.print.com.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "177.23.36.254",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:5a8:f000:3:172:30:30:2"
     },
     {
         "url": "https://speedtest.gamerhost.pro:8080/speedtest/upload.php",
@@ -143388,7 +143412,7 @@
         "id": 40654,
         "https_functional": 1,
         "host": "germanyspeedtest.cts.af.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "103.132.98.91",
         "asn": ""
     },
     {
@@ -144432,7 +144456,7 @@
         "id": 47036,
         "https_functional": 1,
         "host": "speedtest.sweet.tv:8080",
-        "ipv4": "::ffff:178.209.87.83",
+        "ipv4": "178.209.87.83",
         "asn": "",
         "ipv6": "::ffff:178.209.87.83"
     },
@@ -144715,7 +144739,7 @@
         "id": 2762,
         "https_functional": 1,
         "host": "speedtest.sovtest.ru.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "77.243.7.15",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -145846,8 +145870,9 @@
         "id": 51037,
         "https_functional": 1,
         "host": "spx.linkbaratotelecom.com.br:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "45.238.112.184",
+        "asn": "",
+        "ipv6": "2804:4f84:2:3::3"
     },
     {
         "url": "http://speed.tibo.al:8080/speedtest/upload.php",
@@ -145989,9 +146014,8 @@
         "id": 60248,
         "https_functional": 1,
         "host": "speedtest.dft.net.br:8080",
-        "ipv4": "206.43.196.81",
-        "asn": "",
-        "ipv6": "2804:43bc:3a04::10"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://test.pedrosoftware.com.br:8080/speedtest/upload.php",
@@ -146298,7 +146322,7 @@
         "id": 56212,
         "https_functional": 1,
         "host": "speedtest.softnetbroadband.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:103.232.126.130",
+        "ipv4": "103.232.126.130",
         "asn": "",
         "ipv6": "::ffff:103.232.126.130"
     },
@@ -146386,7 +146410,7 @@
         "id": 11015,
         "https_functional": 1,
         "host": "speedtest.apfutura.net:8080",
-        "ipv4": "185.86.11.58",
+        "ipv4": "185.86.11.20",
         "asn": ""
     },
     {
@@ -146672,7 +146696,7 @@
         "id": 28798,
         "https_functional": 1,
         "host": "teste.iwnet.net.br:8080",
-        "ipv4": "177.152.85.166",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -147515,9 +147539,9 @@
         "id": 45865,
         "https_functional": 1,
         "host": "speedtest.m-online.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "62.245.181.54",
+        "ipv4": "62.245.181.52",
         "asn": "",
-        "ipv6": "2001:a60:0:23:216:3eff:fe08:54c2"
+        "ipv6": "2001:a60:0:23:f816:3eff:fe57:f784"
     },
     {
         "url": "http://mue.wsqm.telekom-dienste.de:8080/speedtest/upload.php",
@@ -147631,7 +147655,7 @@
         "id": 59879,
         "https_functional": 1,
         "host": "speedtest-sgt.ptp.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.119.118.121",
+        "ipv4": "103.119.118.109",
         "asn": "",
         "ipv6": "2403:4340:4800::5"
     },
@@ -148250,7 +148274,7 @@
         "host": "teste.uninetfibra.com.br:8080",
         "ipv4": "45.236.199.228",
         "asn": "",
-        "ipv6": "2804:870:a0:cab0::228"
+        "ipv6": "2804:4e70:ffff:fffd::228"
     },
     {
         "url": "http://teste.pontonetba.com.br:8080/speedtest/upload.php",
@@ -148633,9 +148657,8 @@
         "id": 59417,
         "https_functional": 1,
         "host": "infinitytelecomunicacoes.net.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "138.36.198.18",
-        "asn": "",
-        "ipv6": "2804:2204:8000::8202"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "https://speedtest.centersattelecom.com.br:8080/speedtest/upload.php",
@@ -148733,7 +148756,7 @@
         "id": 24945,
         "https_functional": 1,
         "host": "krasnoyarsk-speedtest.corbina.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "195.16.56.227",
+        "ipv4": "80.255.153.55",
         "asn": ""
     },
     {
@@ -149216,7 +149239,7 @@
         "id": 61788,
         "https_functional": 1,
         "host": "subang.ioniq.my.id:8080",
-        "ipv4": "103.153.35.164",
+        "ipv4": "::ffff:103.153.35.164",
         "asn": "",
         "ipv6": "::ffff:103.153.35.164"
     },
@@ -149231,7 +149254,7 @@
         "id": 54588,
         "https_functional": 1,
         "host": "netflextelecom.brsserver.com.br:8080",
-        "ipv4": "45.189.166.254",
+        "ipv4": "201.71.7.0",
         "asn": ""
     },
     {
@@ -149652,7 +149675,7 @@
         "id": 40688,
         "https_functional": 1,
         "host": "speedtest-kursk.corbina.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "62.141.103.74",
+        "ipv4": "62.141.103.78",
         "asn": ""
     },
     {
@@ -150384,7 +150407,7 @@
         "id": 62270,
         "https_functional": 1,
         "host": "speedtestdelhi.weebo.co.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.99.186.14",
+        "ipv4": "103.99.186.54",
         "asn": "",
         "ipv6": "2001:df2:6100::104"
     },
@@ -151439,7 +151462,7 @@
         "host": "speedtest1.sefaronetworks.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.102.96.22",
         "asn": "",
-        "ipv6": "2405:6240::12"
+        "ipv6": "2405:6240:2:2::2"
     },
     {
         "url": "http://speedtest.livefibernet.com:8080/speedtest/upload.php",
@@ -152486,8 +152509,7 @@
         "https_functional": 1,
         "host": "speedtest.sonuinternet.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.120.253.254",
-        "asn": "",
-        "ipv6": "2001:df2:5240:1000::2"
+        "asn": ""
     },
     {
         "url": "http://speedtanuku.wavefiber.co.in:8080/speedtest/upload.php",
@@ -152767,8 +152789,7 @@
         "https_functional": 1,
         "host": "speed.plg.nusa.net.id.prod.hosts.ooklaserver.net:8080",
         "ipv4": "103.218.166.58",
-        "asn": "",
-        "ipv6": "::ffff:103.218.166.58"
+        "asn": ""
     },
     {
         "url": "http://speedtest.zinet.co.id:8080/speedtest/upload.php",
@@ -152996,7 +153017,7 @@
         "id": 46035,
         "https_functional": 1,
         "host": "test.okvirtual.com.br:8080",
-        "ipv4": "177.130.81.49",
+        "ipv4": "177.130.81.35",
         "asn": "",
         "ipv6": "2804:86c:ff:1::49"
     },
@@ -153096,7 +153117,7 @@
         "id": 45860,
         "https_functional": 1,
         "host": "speed.inter-plus.eu.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::255.255.0.121",
+        "ipv4": "79.139.66.41",
         "asn": "",
         "ipv6": "::255.255.0.121"
     },
@@ -153618,7 +153639,7 @@
         "host": "speedtest.solovjov.net:8080",
         "ipv4": "93.95.102.81",
         "asn": "",
-        "ipv6": "2a00:f440:0:3001::161"
+        "ipv6": "2a00:f440:0:3001::162"
     },
     {
         "url": "http://speedtest.abvservices.net.br:8080/speedtest/upload.php",
@@ -154352,9 +154373,9 @@
         "id": 12920,
         "https_functional": 1,
         "host": "speedtest.noone.co.uk.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "172.67.148.161",
+        "ipv4": "104.21.29.83",
         "asn": "",
-        "ipv6": "2606:4700:3037::6815:1d53"
+        "ipv6": "2606:4700:3035::ac43:94a1"
     },
     {
         "url": "http://londres.speedtest.angolacables.co.ao:8080/speedtest/upload.php",
@@ -154367,7 +154388,7 @@
         "id": 48434,
         "https_functional": 1,
         "host": "londres.speedtest.angolacables.co.ao.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "185.148.112.227",
         "asn": ""
     },
     {
@@ -155011,9 +155032,8 @@
         "id": 57865,
         "https_functional": 1,
         "host": "speedtest.rjkonect.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "200.187.104.62",
-        "asn": "",
-        "ipv6": "2804:6fc8:2000:186::62"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest.meganetrj.com.br:8080/speedtest/upload.php",
@@ -155131,7 +155151,7 @@
         "host": "speedtestamr.airjaldi.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "45.113.65.237",
         "asn": "",
-        "ipv6": "2402:2480:0:2700::2"
+        "ipv6": "2402:2480:7:300::2"
     },
     {
         "url": "http://speedtest.atrnetworks.com:8080/speedtest/upload.php",
@@ -155505,9 +155525,8 @@
         "id": 59514,
         "https_functional": 1,
         "host": "granat-id.sgmnet.my.id:8080",
-        "ipv4": "103.236.141.102",
-        "asn": "",
-        "ipv6": "::ffff:103.236.141.102"
+        "ipv4": "103.253.215.19",
+        "asn": ""
     },
     {
         "url": "http://speedtest.binet.id:8080/speedtest/upload.php",
@@ -155873,7 +155892,8 @@
         "https_functional": 1,
         "host": "test.speednetsto-fibra.com.br:8080",
         "ipv4": "45.162.92.14",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:526c:f080::2"
     },
     {
         "url": "http://speedtest.viaspeednet.com.br:8080/speedtest/upload.php",
@@ -156496,7 +156516,7 @@
         "id": 62255,
         "https_functional": 1,
         "host": "speedtest.fibranorte.pe:8080",
-        "ipv4": "::ffff:200.123.15.74",
+        "ipv4": "200.123.15.74",
         "asn": "",
         "ipv6": "::ffff:200.123.15.74"
     },
@@ -157499,7 +157519,7 @@
         "id": 62622,
         "https_functional": 1,
         "host": "speedtest.skytrendnetworks.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "102.67.153.214",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -157571,7 +157591,7 @@
         "id": 6507,
         "https_functional": 1,
         "host": "sp1.ni.net.tr.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "95.173.191.102",
         "asn": ""
     },
     {
@@ -157806,9 +157826,8 @@
         "id": 42774,
         "https_functional": 1,
         "host": "velocidade.fastlink.net.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "131.100.232.10",
-        "asn": "",
-        "ipv6": "2804:1cf8:4000::1a"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://velocidade.mafratelecom.com.br:8080/speedtest/upload.php",
@@ -158210,7 +158229,7 @@
         "id": 40951,
         "https_functional": 1,
         "host": "speed.tured.com.ar.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "45.226.228.55",
         "asn": ""
     },
     {
@@ -158254,7 +158273,7 @@
         "id": 62985,
         "https_functional": 1,
         "host": "pinrang.bineri.my.id:8080",
-        "ipv4": "103.187.86.4",
+        "ipv4": "::ffff:103.187.86.4",
         "asn": "",
         "ipv6": "::ffff:103.187.86.4"
     },
@@ -158507,7 +158526,7 @@
         "host": "vox.ravisystems.com.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "177.21.36.167",
         "asn": "",
-        "ipv6": "2804:8468:0:ff::1"
+        "ipv6": "2804:8468:0:1:177:21:36:167"
     },
     {
         "url": "http://speedperola.foxtelecominformatica.com.br:8080/speedtest/upload.php",
@@ -160860,7 +160879,7 @@
         "id": 31326,
         "https_functional": 1,
         "host": "teste.agrestetelecomunicacoes.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "45.71.120.217",
         "asn": ""
     },
     {
@@ -161181,8 +161200,9 @@
         "id": 52789,
         "https_functional": 1,
         "host": "stest.stdcom.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "37.29.101.90",
-        "asn": ""
+        "ipv4": "194.67.71.156",
+        "asn": "",
+        "ipv6": "2a00:f940:4::10"
     },
     {
         "url": "http://krasnodar.speedtest.rt.ru:8080/speedtest/upload.php",
@@ -161253,7 +161273,7 @@
         "id": 5623,
         "https_functional": 1,
         "host": "krr1.speedtest.corbina.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "77.41.156.202",
+        "ipv4": "194.186.6.234",
         "asn": ""
     },
     {
@@ -162057,9 +162077,8 @@
         "id": 59510,
         "https_functional": 1,
         "host": "lumajang.sgmnet.my.id:8080",
-        "ipv4": "103.236.141.101",
-        "asn": "",
-        "ipv6": "::ffff:103.236.141.101"
+        "ipv4": "103.253.215.19",
+        "asn": ""
     },
     {
         "url": "https://spd1.replay.net.id:8080/speedtest/upload.php",
@@ -162087,7 +162106,7 @@
         "id": 27290,
         "https_functional": 1,
         "host": "testabanda.novaciaidc.com.br:8080",
-        "ipv4": "",
+        "ipv4": "189.126.215.66",
         "asn": ""
     },
     {
@@ -162172,7 +162191,7 @@
         "id": 34442,
         "https_functional": 1,
         "host": "speedtest.dotnet.com.pk.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.186.79.68",
+        "ipv4": "103.155.4.4",
         "asn": ""
     },
     {
@@ -162186,7 +162205,7 @@
         "id": 59176,
         "https_functional": 1,
         "host": "speedtest.xturbo.pe.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:177.67.250.134",
+        "ipv4": "177.67.250.134",
         "asn": "",
         "ipv6": "::ffff:177.67.250.134"
     },
@@ -162944,7 +162963,7 @@
         "id": 57786,
         "https_functional": 1,
         "host": "testeassistec.earedes.com.br:8080",
-        "ipv4": "177.137.228.48",
+        "ipv4": "177.137.228.8",
         "asn": "",
         "ipv6": "2804:10a0:c9::130"
     },
@@ -163444,7 +163463,7 @@
         "id": 55363,
         "https_functional": 1,
         "host": "speedtest3.ora.pf.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "113.197.68.25",
+        "ipv4": "113.197.71.1",
         "asn": ""
     },
     {
@@ -163839,7 +163858,7 @@
         "id": 34837,
         "https_functional": 1,
         "host": "speedtest.somosthunder.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "186.166.141.218",
+        "ipv4": "38.51.181.2",
         "asn": "",
         "ipv6": "2803:3890:6ff:ff00::2"
     },
@@ -163957,7 +163976,7 @@
         "id": 45354,
         "https_functional": 1,
         "host": "speedtest.rioredec.com:8080",
-        "ipv4": "186.3.7.216",
+        "ipv4": "::ffff:186.3.7.216",
         "asn": "",
         "ipv6": "::ffff:186.3.7.216"
     },
@@ -164962,7 +164981,7 @@
         "id": 60058,
         "https_functional": 1,
         "host": "speedtest.t-agung.gayatri.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "210.79.142.13",
+        "ipv4": "210.79.142.142",
         "asn": "",
         "ipv6": "2400:f060:1:3::e"
     },
@@ -165006,9 +165025,9 @@
         "id": 59489,
         "https_functional": 1,
         "host": "testspeed.gigainternet.my.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:120.89.91.18",
+        "ipv4": "::ffff:120.89.91.22",
         "asn": "",
-        "ipv6": "::ffff:120.89.91.18"
+        "ipv6": "::ffff:120.89.91.22"
     },
     {
         "url": "http://speedtest.newtek-hn.com:8080/speedtest/upload.php",
@@ -165383,7 +165402,7 @@
         "id": 52786,
         "https_functional": 1,
         "host": "speedsanfernando.somosthunder.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "186.166.204.150",
+        "ipv4": "190.202.137.12",
         "asn": "",
         "ipv6": "2803:3890:2ff:fc00::2"
     },
@@ -165528,7 +165547,7 @@
         "id": 37305,
         "https_functional": 1,
         "host": "therectifiers.co.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.70.145.106",
+        "ipv4": "103.70.146.186",
         "asn": "",
         "ipv6": "2402:5b00:40:1::28a"
     },
@@ -166295,7 +166314,8 @@
         "https_functional": 1,
         "host": "speedtest.cableredperu.com.prod.hosts.ooklaserver.net:8080",
         "ipv4": "168.194.103.212",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2803:4f40:3200::3"
     },
     {
         "url": "http://speedtest.wiland.info:8080/speedtest/upload.php",
@@ -167342,7 +167362,7 @@
         "host": "mrdspeedtest.ptcl.net.prod.hosts.ooklaserver.net:8080",
         "ipv4": "59.103.87.82",
         "asn": "",
-        "ipv6": "2404:7000:1400:4::2"
+        "ipv6": "2404:7000:1400:4::1"
     },
     {
         "url": "http://pshspeedtest.ptcl.net:8080/speedtest/upload.php",
@@ -168283,9 +168303,9 @@
         "id": 54523,
         "https_functional": 1,
         "host": "sp1.aadwaynetworks.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.159.90.150",
+        "ipv4": "103.107.252.2",
         "asn": "",
-        "ipv6": "2402:5b00:40::92"
+        "ipv6": "2406:6140:0:1005::2"
     },
     {
         "url": "http://speedtest.broadwaycommunication.co.in:8080/speedtest/upload.php",
@@ -169008,7 +169028,7 @@
         "id": 57419,
         "https_functional": 1,
         "host": "lipetck-speedtest.corbina.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "213.33.141.134",
+        "ipv4": "82.142.168.18",
         "asn": ""
     },
     {
@@ -169111,7 +169131,7 @@
         "host": "speedtest.netcampmms.com:8080",
         "ipv4": "222.127.245.232",
         "asn": "",
-        "ipv6": "2001:fd8:f257:3cb3:2a80:23ff:fee9:7950"
+        "ipv6": "2001:fd8:f257:5e3b:2a80:23ff:fee9:7950"
     },
     {
         "url": "http://speedtest.netsetup.net.br:8080/speedtest/upload.php",
@@ -170346,7 +170366,7 @@
         "id": 59701,
         "https_functional": 1,
         "host": "speedtest.ptp.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.119.117.194",
+        "ipv4": "103.119.118.114",
         "asn": "",
         "ipv6": "2403:4340:2800::4"
     },
@@ -170573,9 +170593,9 @@
         "id": 60495,
         "https_functional": 1,
         "host": "speed.atvpedianetwork.my.id:8080",
-        "ipv4": "103.189.96.92",
+        "ipv4": "36.50.77.42",
         "asn": "",
-        "ipv6": "::ffff:103.189.96.92"
+        "ipv6": "2001:df7:5300:9::2a"
     },
     {
         "url": "http://speedtest4.helium.net.id:8080/speedtest/upload.php",
@@ -171064,9 +171084,8 @@
         "id": 7332,
         "https_functional": 1,
         "host": "speedtest.connectprovedor.net.br:8080",
-        "ipv4": "177.86.245.34",
-        "asn": "",
-        "ipv6": "2804:d04:9000::1"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "https://teste.portofrancoti.com.br:8080/speedtest/upload.php",
@@ -171336,8 +171355,9 @@
         "id": 60644,
         "https_functional": 1,
         "host": "speedtest.nemturbofibra.com.br:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "170.245.238.97",
+        "asn": "",
+        "ipv6": "2804:393c:e17:7000::2"
     },
     {
         "url": "https://velocimetro.maisconectfibra.com.br:8080/speedtest/upload.php",
@@ -171627,7 +171647,7 @@
         "id": 32476,
         "https_functional": 1,
         "host": "luanda.speedtest.angolacables.co.ao.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "102.130.68.163",
         "asn": ""
     },
     {
@@ -172008,7 +172028,7 @@
         "id": 50715,
         "https_functional": 1,
         "host": "kanpur.sitibroadband.co.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.171.100.254",
+        "ipv4": "103.217.244.254",
         "asn": "",
         "ipv6": "2402:ea80:13:2::3"
     },
@@ -173665,7 +173685,7 @@
         "id": 26699,
         "https_functional": 1,
         "host": "speedtest.ticcol.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "190.217.20.100",
+        "ipv4": "38.188.178.50",
         "asn": "",
         "ipv6": "2803:b850:0:200::6"
     },
@@ -174810,7 +174830,7 @@
         "id": 62081,
         "https_functional": 1,
         "host": "speedtest.znit.net.bd.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.176.80.247",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -175009,7 +175029,7 @@
         "id": 57241,
         "https_functional": 1,
         "host": "speedtest.cableceiba.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "::ffff:190.5.94.74",
+        "ipv4": "190.5.94.74",
         "asn": "",
         "ipv6": "::ffff:190.5.94.74"
     },
@@ -175083,7 +175103,7 @@
         "id": 57274,
         "https_functional": 1,
         "host": "teste.cabosatmaisnet.com.br:8080",
-        "ipv4": "170.238.163.25",
+        "ipv4": "38.224.181.25",
         "asn": "",
         "ipv6": "2804:361c:fff1::2"
     },
@@ -175327,8 +175347,9 @@
         "id": 58877,
         "https_functional": 1,
         "host": "test.orinetbroadband.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "14.102.65.27",
+        "asn": "",
+        "ipv6": "2402:5b00:40:1::242"
     },
     {
         "url": "http://speedtest.ultranode.in:8080/speedtest/upload.php",
@@ -175341,7 +175362,7 @@
         "id": 37312,
         "https_functional": 1,
         "host": "speedtest.ultranode.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.161.59.254",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -175399,9 +175420,8 @@
         "id": 59494,
         "https_functional": 1,
         "host": "speedtest.sgmnet.my.id:8080",
-        "ipv4": "::ffff:103.236.141.100",
-        "asn": "",
-        "ipv6": "::ffff:103.236.141.100"
+        "ipv4": "103.253.215.19",
+        "asn": ""
     },
     {
         "url": "http://speedtest.gigafibratelecom.com.br:8080/speedtest/upload.php",
@@ -175772,7 +175792,7 @@
         "id": 62225,
         "https_functional": 1,
         "host": "speed.idealnet.app.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.232.139.2",
+        "ipv4": "45.188.243.1",
         "asn": "",
         "ipv6": "2804:a20:c09a:172:17:10:0:6"
     },
@@ -175876,7 +175896,7 @@
         "host": "speedtest.orbit.net.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "104.21.2.17",
         "asn": "",
-        "ipv6": "2606:4700:3037::ac43:8094"
+        "ipv6": "2606:4700:3037::6815:211"
     },
     {
         "url": "https://teste.virtualfibra.com.br:8080/speedtest/upload.php",
@@ -177142,9 +177162,9 @@
         "id": 37505,
         "https_functional": 1,
         "host": "speedtest.dsnetfibra.com.br:8080",
-        "ipv4": "209.14.146.221",
+        "ipv4": "186.248.163.194",
         "asn": "",
-        "ipv6": "2804:2ab8:a006:100::2"
+        "ipv6": "2804:238:15:100::2"
     },
     {
         "url": "http://speedtest.patrimonialtelecom.com.br:8080/speedtest/upload.php",
@@ -177522,7 +177542,7 @@
         "id": 43633,
         "https_functional": 1,
         "host": "stn.tn28.ru.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "81.177.76.253",
+        "ipv4": "176.57.65.175",
         "asn": ""
     },
     {
@@ -179542,7 +179562,7 @@
         "id": 11175,
         "https_functional": 1,
         "host": "speedtest.timetelecom.net.br:8080",
-        "ipv4": "206.0.157.253",
+        "ipv4": "179.228.207.84",
         "asn": "",
         "ipv6": "2804:1c3c:41fa::fa2"
     },
@@ -179731,9 +179751,8 @@
         "id": 46732,
         "https_functional": 1,
         "host": "speedtest.twincher.ru:8080",
-        "ipv4": "78.107.238.225",
-        "asn": "",
-        "ipv6": "2001:470:28:1f4:c2e7:d9af:f038:60cb"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://speedtest.satel.net.ua:8080/speedtest/upload.php",
@@ -179922,8 +179941,9 @@
         "id": 57257,
         "https_functional": 1,
         "host": "spd01.evottel.com.br:8080",
-        "ipv4": "191.7.149.0",
-        "asn": ""
+        "ipv4": "191.7.149.5",
+        "asn": "",
+        "ipv6": "2804:143c:ff10::2"
     },
     {
         "url": "http://speedtest.sietecapas.com.ar:8080/speedtest/upload.php",
@@ -180372,7 +180392,7 @@
         "id": 63076,
         "https_functional": 1,
         "host": "sosimhk.datapath.three.com.hk.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "124.217.143.7",
+        "ipv4": "124.217.179.181",
         "asn": ""
     },
     {
@@ -180400,9 +180420,8 @@
         "id": 60370,
         "https_functional": 1,
         "host": "speedtest1.pepeunet.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "201.140.238.107",
-        "asn": "",
-        "ipv6": "2804:3434:c100::2"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://ntp-velocimetro.lvnetwork.com.br:8080/speedtest/upload.php",
@@ -181040,7 +181059,7 @@
         "id": 1785,
         "https_functional": 1,
         "host": "min2.smart.com.ph.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "203.87.208.128",
         "asn": ""
     },
     {
@@ -181276,9 +181295,8 @@
         "id": 58403,
         "https_functional": 1,
         "host": "speedcn.viatectelecom.com.br:8080",
-        "ipv4": "201.158.8.172",
-        "asn": "",
-        "ipv6": "2804:1880:600:3::2"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://infotecfibraspeedtest.com.br:8080/speedtest/upload.php",
@@ -181640,7 +181658,7 @@
         "id": 61627,
         "https_functional": 1,
         "host": "speedtest.wexnetwork.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "62.244.216.61",
+        "ipv4": "62.244.216.45",
         "asn": ""
     },
     {
@@ -183445,7 +183463,7 @@
         "host": "ooklatestmohali.live.vodafone.in:8080",
         "ipv4": "112.79.47.9",
         "asn": "",
-        "ipv6": "2402:3a80:c016:3::fd2"
+        "ipv6": "2402:3a80:c016:4::fd2"
     },
     {
         "url": "https://speedtest.connectzone.in:8080/speedtest/upload.php",
@@ -183557,7 +183575,7 @@
         "id": 60020,
         "https_functional": 1,
         "host": "speed.speedinfo.net.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "179.42.139.19",
+        "ipv4": "45.186.54.9",
         "asn": "",
         "ipv6": "2804:8578:10:233:256::a"
     },
@@ -183746,7 +183764,7 @@
         "id": 30034,
         "https_functional": 1,
         "host": "speedtest.yes.com.kh:8080",
-        "ipv4": "",
+        "ipv4": "103.242.59.42",
         "asn": ""
     },
     {
@@ -183989,7 +184007,7 @@
         "id": 37663,
         "https_functional": 1,
         "host": "teste.surubiminternet.com.br:8080",
-        "ipv4": "170.80.44.19",
+        "ipv4": "170.80.44.82",
         "asn": "",
         "ipv6": "2804:36bc:100::6"
     },
@@ -184094,7 +184112,8 @@
         "https_functional": 1,
         "host": "speed-taq.zaaztelecom.com.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "177.223.96.98",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:71d4:c000:f001:1::3e"
     },
     {
         "url": "http://stmc.gruponetsolution.com.br:8080/speedtest/upload.php",
@@ -184270,8 +184289,7 @@
         "https_functional": 1,
         "host": "bbs.speedtest.railtel.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "112.133.208.162",
-        "asn": "",
-        "ipv6": "2401:b200:12::d"
+        "asn": ""
     },
     {
         "url": "https://ooklatestbhubaneshwar.live.vodafone.in:8080/speedtest/upload.php",
@@ -184739,7 +184757,7 @@
         "id": 62450,
         "https_functional": 1,
         "host": "sukamekar.megadatabekasi.my.id:8080",
-        "ipv4": "::ffff:103.165.157.186",
+        "ipv4": "103.165.157.186",
         "asn": "",
         "ipv6": "::ffff:103.165.157.186"
     },
@@ -184768,7 +184786,7 @@
         "id": 61867,
         "https_functional": 1,
         "host": "karawang.ptmediasolusisukses.my.id:8080",
-        "ipv4": "::ffff:103.172.42.6",
+        "ipv4": "103.172.42.6",
         "asn": "",
         "ipv6": "::ffff:103.172.42.6"
     },
@@ -185396,7 +185414,7 @@
         "id": 53043,
         "https_functional": 1,
         "host": "speedtest.kalibo-cable.tv.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.5.1.124",
+        "ipv4": "162.251.80.225",
         "asn": "",
         "ipv6": "2001:470:35:643::2"
     },
@@ -185453,7 +185471,7 @@
         "id": 10329,
         "https_functional": 1,
         "host": "tula-speedtest.corbina.net.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "194.186.253.58",
+        "ipv4": "195.239.91.162",
         "asn": ""
     },
     {
@@ -185540,9 +185558,9 @@
         "id": 62946,
         "https_functional": 1,
         "host": "tulungagung.bnos.my.id:8080",
-        "ipv4": "103.118.175.161",
+        "ipv4": "191.101.190.182",
         "asn": "",
-        "ipv6": "::ffff"
+        "ipv6": "::ffff:191.101.190.182"
     },
     {
         "url": "http://speedtest.conecttiva.com.br:8080/speedtest/upload.php",
@@ -185818,7 +185836,7 @@
         "id": 62288,
         "https_functional": 1,
         "host": "ternate.fiberskynet.my.id:8080",
-        "ipv4": "206.237.98.28",
+        "ipv4": "::ffff:206.237.98.28",
         "asn": "",
         "ipv6": "::ffff:206.237.98.28"
     },
@@ -186303,7 +186321,7 @@
         "host": "speedtestpbl1.airtelbroadband.in.prod.hosts.ooklaserver.net:8080",
         "ipv4": "182.78.196.222",
         "asn": "",
-        "ipv6": "2404:a800:4a00::210"
+        "ipv6": "2404:a800:4a00::211"
     },
     {
         "url": "https://speedtest.alphannet.com.br:8080/speedtest/upload.php",
@@ -186783,7 +186801,7 @@
         "id": 29461,
         "https_functional": 1,
         "host": "teste.galeranerd.net.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.175.196.13",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -187188,7 +187206,7 @@
         "id": 61542,
         "https_functional": 1,
         "host": "speedtest.cnetfibra.com.br:8080",
-        "ipv4": "143.202.67.255",
+        "ipv4": "143.202.67.0",
         "asn": "",
         "ipv6": "2804:832c:bebe:f0c1::30"
     },
@@ -188019,8 +188037,9 @@
         "id": 13905,
         "https_functional": 1,
         "host": "speedtest1.melnetrs.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "131.196.220.13",
-        "asn": ""
+        "ipv4": "131.196.220.11",
+        "asn": "",
+        "ipv6": "2804:40d8:aaaa:aaaa:cccc::2"
     },
     {
         "url": "http://speed.logfi.net.br:8080/speedtest/upload.php",
@@ -188307,7 +188326,7 @@
         "id": 28190,
         "https_functional": 1,
         "host": "speedtest.eltecweb.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "45.70.28.37",
+        "ipv4": "",
         "asn": ""
     },
     {
@@ -189287,7 +189306,7 @@
         "id": 36778,
         "https_functional": 1,
         "host": "speedtest.hitechbroadband.in.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.105.100.10",
+        "ipv4": "103.105.100.26",
         "asn": ""
     },
     {
@@ -190198,7 +190217,8 @@
         "https_functional": 1,
         "host": "speedtest.arikinet.com.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "177.11.209.50",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:370:30:180::2"
     },
     {
         "url": "https://velocidade.flattelecom.com.br:8080/speedtest/upload.php",
@@ -190270,9 +190290,9 @@
         "id": 39803,
         "https_functional": 1,
         "host": "speedtest.artnettelecom.com.br:8080",
-        "ipv4": "207.248.10.131",
+        "ipv4": "187.61.104.10",
         "asn": "",
-        "ipv6": "2804:2178:400::6"
+        "ipv6": "2804:7898:2100::12"
     },
     {
         "url": "https://speedtest.voetelecom.net.br:8080/speedtest/upload.php",
@@ -190430,7 +190450,7 @@
         "id": 57643,
         "https_functional": 1,
         "host": "nasem.online.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "82.138.125.176",
+        "ipv4": "149.86.137.85",
         "asn": ""
     },
     {
@@ -191000,7 +191020,7 @@
         "id": 26797,
         "https_functional": 1,
         "host": "speedtest.pindoramaonline.com.br:8080",
-        "ipv4": "45.237.115.3",
+        "ipv4": "45.237.112.26",
         "asn": "",
         "ipv6": "2804:4ed4:1000:6::3"
     },
@@ -192330,9 +192350,8 @@
         "id": 59825,
         "https_functional": 1,
         "host": "speedtest.lunglei.lalatinternet.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.158.52.134",
-        "asn": "",
-        "ipv6": "2406:b040:0:4::2"
+        "ipv4": "",
+        "asn": ""
     },
     {
         "url": "http://sp1.netinfortelecom.com.br:8080/speedtest/upload.php",
@@ -192449,9 +192468,9 @@
         "id": 57040,
         "https_functional": 1,
         "host": "speedtest.telemedia.link:8080",
-        "ipv4": "103.136.162.5",
+        "ipv4": "160.25.222.5",
         "asn": "",
-        "ipv6": "2404:97c0:162:5::2"
+        "ipv6": "2404:97c0:222:270::270"
     },
     {
         "url": "http://breitbandmessung.telepark-passau.de:8080/speedtest/upload.php",
@@ -192672,7 +192691,7 @@
         "id": 58829,
         "https_functional": 1,
         "host": "fortaleza.speedtest.angolacables.co.ao.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
+        "ipv4": "170.238.235.211",
         "asn": ""
     },
     {
@@ -193351,8 +193370,9 @@
         "id": 56632,
         "https_functional": 1,
         "host": "jakarta2.speedtest.telkom.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "",
-        "asn": ""
+        "ipv4": "125.160.11.34",
+        "asn": "",
+        "ipv6": "2001:4489:206:101::102"
     },
     {
         "url": "https://jakarta.haciteleco.my.id:8080/speedtest/upload.php",
@@ -193594,7 +193614,7 @@
         "id": 62802,
         "https_functional": 1,
         "host": "spd-ponorogo.menaksopal.net.id.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "38.188.249.226",
+        "ipv4": "157.66.85.226",
         "asn": "",
         "ipv6": "2405:c8c0::1:0:6"
     },
@@ -193639,7 +193659,8 @@
         "https_functional": 1,
         "host": "speedtest.navexinternet.com.br.prod.hosts.ooklaserver.net:8080",
         "ipv4": "179.109.96.30",
-        "asn": ""
+        "asn": "",
+        "ipv6": "2804:70e0::179:109:96:30"
     },
     {
         "url": "http://speedtest.wavex.co.ke:8080/speedtest/upload.php",
@@ -193738,7 +193759,7 @@
         "id": 57593,
         "https_functional": 1,
         "host": "test.inflynetworks.com.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "103.189.60.9",
+        "ipv4": "::ffff:103.189.60.9",
         "asn": "",
         "ipv6": "::ffff:103.189.60.9"
     },
@@ -195160,7 +195181,7 @@
         "id": 3065,
         "https_functional": 1,
         "host": "svstrjo0101.timbrasil.com.br.prod.hosts.ooklaserver.net:8080",
-        "ipv4": "186.229.124.49",
+        "ipv4": "",
         "asn": ""
     },
     {

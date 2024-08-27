@@ -4,7 +4,7 @@ import socket
 with open('trace.json', 'r') as f:
     servers = json.load(f)
 
-with open('ip.txt', 'w') as ip, open('trace2.json', 'w') as trace2_file:
+with open('ipv4.txt', 'w') as ipv4, open('ipv6.txt', 'w') as ipv6, open('trace2.json', 'w') as trace2_file:
     alldata = []
     for server in servers:
         hostname = server['host'].split(':')[0]
@@ -19,10 +19,11 @@ with open('ip.txt', 'w') as ip, open('trace2.json', 'w') as trace2_file:
             print(f"Could not resolve {hostname}")
         
         for address in addresses:
-            ip.write(address + '\n')
             if '.' in address:
+                ipv4.write(address + '\n')
                 server['ipv4']=address
             if ':' in address:
+                ipv6.write(address + '\n')
                 server['ipv6']=address
         alldata.append(server)
 

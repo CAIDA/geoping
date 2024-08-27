@@ -35,15 +35,27 @@ local_client = salt.client.LocalClient()
 DATE = datetime.now().strftime("%Y-%m-%d_%H.%M.%S")
 RESULT_FILE_NAME = "geoloc-pinger_{}.{}.warts".format(args.launch, DATE)
 print("Measurement ID: {}\n".format(RESULT_FILE_NAME))
+
 MINION_IP_ADDRESS_LIST_FILENAME = 'ipaddr_{}.txt'.format(DATE)
 CMD_REMOVE_AND_CREATE_IP_ADDR_FILE = f"sudo rm /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}*; echo 'Deleted all previous IP files'"
 CMD_CREATE_RESULTS_DIR_IF_NOT_EXISTS = f"sudo mkdir -p {GEOPING_RESULTS_DIR} && echo 'Created {GEOPING_RESULTS_DIR} directory if it did not exist'"
-CMD_REMOVE_RESULTS_DIR = f"sudo rm -rf {GEOPING_RESULTS_DIR}"
-CMD_SPLIT_FILE = f"split -l {CHUNK_SIZE} /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME} /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_"
-CMD_RENAME_FILE = f'counter=0; for i in $(ls -1 /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_*); do sudo mv "$i" "/home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_$counter.txt"; counter=$((counter + 1)); done ; echo "Splitted and renamed all ip file chunks"'
-CMD_KILL_SCAMPER = f"sudo kill -9 $(sudo lsof -ti :{SCAMPER_PORT}) 2>/dev/null && echo 'Killed process (if any) on port {SCAMPER_PORT}'"
-CMD_START_SCAMPER = f"sudo scamper -P {SCAMPER_PORT} -p {SCAMPER_PPS} -D && echo 'Started scamper on port {SCAMPER_PORT}' && sleep 1"
-CMD_AGGREGATE_CHUNK_RESULTS = f"sudo sc_wartscat -o {GEOPING_RESULTS_DIR}/{RESULT_FILE_NAME} {GEOPING_RESULTS_DIR}/geoloc-pinger_{args.launch}.{DATE}_*.warts"
+CMD_REMOVE_RESULTS_DIR = f"sudo rm {GEOPING_RESULTS_DIR}/{RESULT_FILE_NAME}"
+# CMD_SPLIT_FILE = f"split -l {CHUNK_SIZE} /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME} /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_"
+# CMD_RENAME_FILE = f'counter=0; for i in $(ls -1 /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_*); do sudo mv "$i" "/home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_$counter.txt"; counter=$((counter + 1)); done ; echo "Splitted and renamed all ip file chunks"'
+# CMD_KILL_SCAMPER = f"sudo kill -9 $(sudo lsof -ti :{SCAMPER_PORT}) 2>/dev/null && echo 'Killed process (if any) on port {SCAMPER_PORT}'"
+# CMD_START_SCAMPER = f"sudo scamper -P {SCAMPER_PORT} -p {SCAMPER_PPS} -D && echo 'Started scamper on port {SCAMPER_PORT}' && sleep 1"
+# CMD_AGGREGATE_CHUNK_RESULTS = f"sudo sc_wartscat -o {GEOPING_RESULTS_DIR}/{RESULT_FILE_NAME} {GEOPING_RESULTS_DIR}/geoloc-pinger_{args.launch}.{DATE}_*.warts"
+CMD_LAUNCH_SC_PINGER = "sudo sc_pinger -a /home/ubuntu/{} -o {}/{} -p {} {} >{}/{} ; tail -1 {}/{}".format(MINION_IP_ADDRESS_LIST_FILENAME, GEOPING_RESULTS_DIR, RESULT_FILE_NAME, SCAMPER_PORT, args.flags, GEOPING_RESULTS_DIR, SC_PINGER_LOG_FILEAME, GEOPING_RESULTS_DIR,SC_PINGER_LOG_FILEAME)
+CMD_LAUNCH_SC_PINGER_TCP = "sudo sc_pinger -a /home/ubuntu/{} -o {}/{} -p {} -m 'tcp-syn-sport -d 80' {} >{}/{} ; tail -1 {}/{}".format(MINION_IP_ADDRESS_LIST_FILENAME, GEOPING_RESULTS_DIR, RESULT_FILE_NAME, SCAMPER_PORT, args.flags, GEOPING_RESULTS_DIR, SC_PINGER_LOG_FILEAME, GEOPING_RESULTS_DIR,SC_PINGER_LOG_FILEAME)
+CMD_LAUNCH_SC_ATTACH = "sudo sc_attach -c 'trace {}' -i /home/ubuntu/{} -o {}/{} -p {}".format(args.flags, MINION_IP_ADDRESS_LIST_FILENAME, GEOPING_RESULTS_DIR, RESULT_FILE_NAME, SCAMPER_PORT)
+CMD_LAUNCH_EXPERIMENT = ""
+if(args.launch == 'ping'):
+    CMD_LAUNCH_EXPERIMENT = CMD_LAUNCH_SC_PINGER
+elif(args.launch == "ping-tcp"):
+    CMD_LAUNCH_EXPERIMENT = CMD_LAUNCH_SC_PINGER_TCP
+elif(args.launch == "trace"):
+    CMD_LAUNCH_EXPERIMENT = CMD_LAUNCH_SC_ATTACH
+
 CMD_COMPRESS_RESULT_FILE = f"bzip2 -9 -f {GEOPING_RESULTS_DIR}/{RESULT_FILE_NAME} && echo 'Compressed result file'"
 COMPRESSED_RESULT_FILENAME = RESULT_FILE_NAME + '.bz2'
 COMPRESSED_RESULT_FILEPATH = GEOPING_RESULTS_DIR + '/' + COMPRESSED_RESULT_FILENAME
@@ -61,34 +73,37 @@ result = local_client.cmd(TARGET, "cmd.run", [CMD_CREATE_RESULTS_DIR_IF_NOT_EXIS
 print(json.dumps(result, indent=4))
 print()
 
-# Split the IP address file and rename the split files
-print(f"Splitting IP address file into chunks of {CHUNK_SIZE} lines each and renaming them...")
-command = "&&".join([CMD_SPLIT_FILE, CMD_RENAME_FILE])
-result = local_client.cmd(TARGET, "cmd.run", [command], shell=True)
+result = local_client.cmd(TARGET, "cmd.run", [CMD_LAUNCH_EXPERIMENT])
+print("Results of running sc_pinger on all minions")
 print(json.dumps(result, indent=4))
 print()
 
-# Prepare and start the Scamper process on the minions and run sc_attach on the minions
-print("Running Scamper on each IP address chunk and attaching results...")
-command = f"""
-counter=0
-for ips in $(ls -1 /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_*); do
-    {CMD_KILL_SCAMPER}
-    {CMD_START_SCAMPER}
-    sudo sc_attach -c 'trace {args.flags}' -i $ips -o {GEOPING_RESULTS_DIR}/geoloc-pinger_{args.launch}.{DATE}_$counter.warts -p {SCAMPER_PORT}
-    counter=$((counter + 1))
-done
-"""
-result = local_client.cmd(TARGET, "cmd.run", [command], shell=True)
-print("Done Running sc_attach")
-print(json.dumps(result, indent=4))
-print()
+# # Split the IP address file and rename the split files
+# print(f"Splitting IP address file into chunks of {CHUNK_SIZE} lines each and renaming them...")
+# command = "&&".join([CMD_SPLIT_FILE, CMD_RENAME_FILE])
+# result = local_client.cmd(TARGET, "cmd.run", [command], shell=True)
+# print(json.dumps(result, indent=4))
+# print()
 
-# Run sc_wartscat to aggregate the results
-print("Aggregating all chunks results with sc_wartscat...")
-result = local_client.cmd(TARGET, "cmd.run", [CMD_AGGREGATE_CHUNK_RESULTS], shell=True)
-print(json.dumps(result, indent=4))
-print()
+# # Prepare and start the Scamper process on the minions and run sc_attach on the minions
+# print("Running Scamper on each IP address chunk and attaching results...")
+# command = f"""
+# counter=0
+# for ips in $(ls -1 /home/ubuntu/{MINION_IP_ADDRESS_LIST_FILENAME}_*); do
+#     sudo sc_attach -c 'trace {args.flags}' -i $ips -o {GEOPING_RESULTS_DIR}/geoloc-pinger_{args.launch}.{DATE}_$counter.warts -p {SCAMPER_PORT}
+#     counter=$((counter + 1))
+# done
+# """
+# result = local_client.cmd(TARGET, "cmd.run", [command], shell=True)
+# print("Done Running sc_attach")
+# print(json.dumps(result, indent=4))
+# print()
+
+# # Run sc_wartscat to aggregate the results
+# print("Aggregating all chunks results with sc_wartscat...")
+# result = local_client.cmd(TARGET, "cmd.run", [CMD_AGGREGATE_CHUNK_RESULTS], shell=True)
+# print(json.dumps(result, indent=4))
+# print()
 
 # Compress the aggregated result file
 print("Compressing the result file with bzip2...")
