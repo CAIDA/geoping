@@ -25,8 +25,9 @@ fi
 # Install Salt Master if not installed
 if ! [ -x "$(command -v salt-master)" ]; then
     echo "Salt Master is not installed. Installing now..."
-    sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-    echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/latest noble main" | sudo tee /etc/apt/sources.list.d/salt.list
+    sudo mkdir -p /etc/apt/keyrings
+    sudo curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp
+    curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources
     sudo apt-get update
     sudo apt-get install -y salt-master
     echo "Salt Master installed."
@@ -118,7 +119,7 @@ addlines="User=root\nGroup=salt\nCacheDirectory=salt/master\nRuntimeDirectory=sa
 if ! grep -q 'User=root' /lib/systemd/system/salt-master.service; then
         sudo sed -ie "/^ExecStart/a $addlines" /lib/systemd/system/salt-master.service
         echo "Successfully updated /lib/systemd/system/salt-master.service"
-        sudo systemstl daemon-reload
+        sudo systemctl daemon-reload
 fi
 
 if sudo grep file_recv /etc/salt/master; then
