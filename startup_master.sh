@@ -119,7 +119,7 @@ addlines="User=root\nGroup=salt\nCacheDirectory=salt/master\nRuntimeDirectory=sa
 if ! grep -q 'User=root' /lib/systemd/system/salt-master.service; then
         sudo sed -ie "/^ExecStart/a $addlines" /lib/systemd/system/salt-master.service
         echo "Successfully updated /lib/systemd/system/salt-master.service"
-        sudo systemstl daemon-reload
+        sudo systemctl daemon-reload
 fi
 
 if sudo grep file_recv /etc/salt/master; then
