@@ -24,10 +24,12 @@ fi
 
 if ! [ -x "$(command -v salt-minion)" ]; then
     echo "Salt Minion is not installed. Installing now..."
-    sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-    echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/latest noble main" | sudo tee /etc/apt/sources.list.d/salt.list
+    sudo mkdir -p /etc/apt/keyrings
+    sudo curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp
+    curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources
     sudo apt-get update
     sudo apt-get install -y salt-minion
+    echo "Salt Minion installed."
 fi
 # #Code to update a master
 sudo echo -e "master: $3" | sudo tee /etc/salt/minion.d/master.conf
