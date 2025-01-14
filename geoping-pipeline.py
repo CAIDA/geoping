@@ -13,7 +13,7 @@ from botocore.exceptions import NoCredentialsError
 parser = argparse.ArgumentParser()
 parser.add_argument("--regex", type=str, default="aws-us-east-2*", help="regex for targeted vantage points")
 parser.add_argument("--launch", type=str, default="ping", help="Options to launch the experiment, ping = icmp-echo ping, ping-tcp = tcp ping, trace = traceroute")
-parser.add_argument("--flags", type=str, default="", help="add the flags you want to conduct complext tests")
+parser.add_argument("--flags", type=str, default="", help="add the flags you want to conduct complex tests")
 args = parser.parse_args()
 
 ############### PARAMETERS ###########
